@@ -1,0 +1,223 @@
+; external declaration of sound table:
+
+    .EXTRN (const) SNDTBL_SOUNDS
+
+
+
+; external declarations of addresses of sounds for direct access:
+
+    .EXTRN (const) SX_buenas_tardes
+    .EXTRN (const) SX_buenos_dias
+    .EXTRN (const) SX_chiste_1
+    .EXTRN (const) SX_chiste_2
+    .EXTRN (const) SX_chiste_3
+    .EXTRN (const) SX_chiste_4
+    .EXTRN (const) SX_dia_1_lunes
+    .EXTRN (const) SX_dia_2_martes
+    .EXTRN (const) SX_dia_3_miercoles
+    .EXTRN (const) SX_dia_4_jueves
+    .EXTRN (const) SX_dia_5_viernes
+    .EXTRN (const) SX_dia_6_sabado
+    .EXTRN (const) SX_dia_7_domingo
+    .EXTRN (const) SX_dia_bien
+    .EXTRN (const) SX_dormido_bien
+    .EXTRN (const) SX_escuchar_musica
+    .EXTRN (const) SX_hora_1
+    .EXTRN (const) SX_hora_2
+    .EXTRN (const) SX_hora_3
+    .EXTRN (const) SX_hora_4
+    .EXTRN (const) SX_hora_5
+    .EXTRN (const) SX_hora_6
+    .EXTRN (const) SX_hora_7
+    .EXTRN (const) SX_hora_8
+    .EXTRN (const) SX_hora_9
+    .EXTRN (const) SX_hora_10
+    .EXTRN (const) SX_hora_11
+    .EXTRN (const) SX_hora_12
+    .EXTRN (const) SX_ma_ana
+    .EXTRN (const) SX_mes_1_enero
+    .EXTRN (const) SX_mes_2_febrero
+    .EXTRN (const) SX_mes_3_marzo
+    .EXTRN (const) SX_mes_4_abril
+    .EXTRN (const) SX_mes_5_mayo
+    .EXTRN (const) SX_mes_6_junio
+    .EXTRN (const) SX_mes_7julio
+    .EXTRN (const) SX_mes_8_agosto
+    .EXTRN (const) SX_mes_9_septiembre
+    .EXTRN (const) SX_mes_11_noviembre
+    .EXTRN (const) SX_mes_11_octubre
+    .EXTRN (const) SX_mes_12_diciembre
+    .EXTRN (const) SX_min_0
+    .EXTRN (const) SX_min_5
+    .EXTRN (const) SX_min_10
+    .EXTRN (const) SX_min_15
+    .EXTRN (const) SX_min_20
+    .EXTRN (const) SX_min_25
+    .EXTRN (const) SX_min_30
+    .EXTRN (const) SX_min_35
+    .EXTRN (const) SX_min_40
+    .EXTRN (const) SX_min_45
+    .EXTRN (const) SX_min_50
+    .EXTRN (const) SX_min_55
+    .EXTRN (const) SX_no
+    .EXTRN (const) SX_num_0
+    .EXTRN (const) SX_num_1
+    .EXTRN (const) SX_num_2
+    .EXTRN (const) SX_num_3
+    .EXTRN (const) SX_num_4
+    .EXTRN (const) SX_num_5
+    .EXTRN (const) SX_num_6
+    .EXTRN (const) SX_num_7
+    .EXTRN (const) SX_num_8
+    .EXTRN (const) SX_num_9
+    .EXTRN (const) SX_num_10
+    .EXTRN (const) SX_num_11
+    .EXTRN (const) SX_num_12
+    .EXTRN (const) SX_num_13
+    .EXTRN (const) SX_num_14
+    .EXTRN (const) SX_num_15
+    .EXTRN (const) SX_num_16
+    .EXTRN (const) SX_num_17
+    .EXTRN (const) SX_num_18
+    .EXTRN (const) SX_num_19
+    .EXTRN (const) SX_num_20
+    .EXTRN (const) SX_num_21
+    .EXTRN (const) SX_num_22
+    .EXTRN (const) SX_num_23
+    .EXTRN (const) SX_num_24
+    .EXTRN (const) SX_num_25
+    .EXTRN (const) SX_num_26
+    .EXTRN (const) SX_num_27
+    .EXTRN (const) SX_num_28
+    .EXTRN (const) SX_num_29
+    .EXTRN (const) SX_num_30
+    .EXTRN (const) SX_num_31
+    .EXTRN (const) SX_num_32
+    .EXTRN (const) SX_num_33
+    .EXTRN (const) SX_num_34
+    .EXTRN (const) SX_num_35
+    .EXTRN (const) SX_num_36
+    .EXTRN (const) SX_num_37
+    .EXTRN (const) SX_num_38
+    .EXTRN (const) SX_num_39
+    .EXTRN (const) SX_pase_buen_dia
+    .EXTRN (const) SX_presentate
+    .EXTRN (const) SX_tarde
+    .EXTRN (const) SX_tienes_clase
+    .EXTRN (const) SX_uni_bien
+    .EXTRN (const) SX_chiste_oir
+    .EXTRN (const) SX_movimiento_off
+    .EXTRN (const) SX_movimiento_on
+    .EXTRN (const) SX_si
+    .EXTRN (const) SX_alarma_off
+    .EXTRN (const) SX_alarma_on
+
+
+; equates defining sounds as entries in the sound table:
+
+SND_buenas_tardes       .EQU 1
+SND_buenos_dias         .EQU 2
+SND_chiste_1            .EQU 3
+SND_chiste_2            .EQU 4
+SND_chiste_3            .EQU 5
+SND_chiste_4            .EQU 6
+SND_dia_1_lunes         .EQU 7
+SND_dia_2_martes        .EQU 8
+SND_dia_3_miercoles     .EQU 9
+SND_dia_4_jueves        .EQU 10
+SND_dia_5_viernes       .EQU 11
+SND_dia_6_sabado        .EQU 12
+SND_dia_7_domingo       .EQU 13
+SND_dia_bien            .EQU 14
+SND_dormido_bien        .EQU 15
+SND_escuchar_musica     .EQU 16
+SND_hora_1              .EQU 17
+SND_hora_2              .EQU 18
+SND_hora_3              .EQU 19
+SND_hora_4              .EQU 20
+SND_hora_5              .EQU 21
+SND_hora_6              .EQU 22
+SND_hora_7              .EQU 23
+SND_hora_8              .EQU 24
+SND_hora_9              .EQU 25
+SND_hora_10             .EQU 26
+SND_hora_11             .EQU 27
+SND_hora_12             .EQU 28
+SND_ma_ana              .EQU 29
+SND_mes_1_enero         .EQU 30
+SND_mes_2_febrero       .EQU 31
+SND_mes_3_marzo         .EQU 32
+SND_mes_4_abril         .EQU 33
+SND_mes_5_mayo          .EQU 34
+SND_mes_6_junio         .EQU 35
+SND_mes_7julio          .EQU 36
+SND_mes_8_agosto        .EQU 37
+SND_mes_9_septiembre    .EQU 38
+SND_mes_11_noviembre    .EQU 39
+SND_mes_11_octubre      .EQU 40
+SND_mes_12_diciembre    .EQU 41
+SND_min_0               .EQU 42
+SND_min_5               .EQU 43
+SND_min_10              .EQU 44
+SND_min_15              .EQU 45
+SND_min_20              .EQU 46
+SND_min_25              .EQU 47
+SND_min_30              .EQU 48
+SND_min_35              .EQU 49
+SND_min_40              .EQU 50
+SND_min_45              .EQU 51
+SND_min_50              .EQU 52
+SND_min_55              .EQU 53
+SND_no                  .EQU 54
+SND_num_0               .EQU 55
+SND_num_1               .EQU 56
+SND_num_2               .EQU 57
+SND_num_3               .EQU 58
+SND_num_4               .EQU 59
+SND_num_5               .EQU 60
+SND_num_6               .EQU 61
+SND_num_7               .EQU 62
+SND_num_8               .EQU 63
+SND_num_9               .EQU 64
+SND_num_10              .EQU 65
+SND_num_11              .EQU 66
+SND_num_12              .EQU 67
+SND_num_13              .EQU 68
+SND_num_14              .EQU 69
+SND_num_15              .EQU 70
+SND_num_16              .EQU 71
+SND_num_17              .EQU 72
+SND_num_18              .EQU 73
+SND_num_19              .EQU 74
+SND_num_20              .EQU 75
+SND_num_21              .EQU 76
+SND_num_22              .EQU 77
+SND_num_23              .EQU 78
+SND_num_24              .EQU 79
+SND_num_25              .EQU 80
+SND_num_26              .EQU 81
+SND_num_27              .EQU 82
+SND_num_28              .EQU 83
+SND_num_29              .EQU 84
+SND_num_30              .EQU 85
+SND_num_31              .EQU 86
+SND_num_32              .EQU 87
+SND_num_33              .EQU 88
+SND_num_34              .EQU 89
+SND_num_35              .EQU 90
+SND_num_36              .EQU 91
+SND_num_37              .EQU 92
+SND_num_38              .EQU 93
+SND_num_39              .EQU 94
+SND_pase_buen_dia       .EQU 95
+SND_presentate          .EQU 96
+SND_tarde               .EQU 97
+SND_tienes_clase        .EQU 98
+SND_uni_bien            .EQU 99
+SND_chiste_oir          .EQU 100
+SND_movimiento_off      .EQU 101
+SND_movimiento_on       .EQU 102
+SND_si                  .EQU 103
+SND_alarma_off          .EQU 104
+SND_alarma_on           .EQU 105
+
