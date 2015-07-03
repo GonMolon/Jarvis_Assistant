@@ -1,11 +1,15 @@
 #ifndef MOVIMIENTO_H
 #define MOVIMIENTO_H
 
+#include "Timer.h"
+
 class Movimiento{
     const int PIN_MOVIMIENTO = 6;
     const int PIN_LED = 11;
+    const int interval = 5;
     bool activado = true;
-    bool movimiento = true;
+    bool movimiento = false;
+    Timer timer = Timer(interval);
 public:
     Movimiento();
     bool is_activated() const;

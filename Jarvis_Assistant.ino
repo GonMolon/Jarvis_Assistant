@@ -2,7 +2,7 @@
 #include <EasyVR.h>
 #include <SoftwareSerial.h>
 #include <IRremote.h>
-#include <ServoTimer2.h>
+#include <Servo.h>
 
 Jarvis jarvis;
 

@@ -12,25 +12,26 @@ void Jarvis::setup() {
 }
 
 void Jarvis::refresh() { 
-    /*if(mov.refresh()) {
-      
-        //inter.changeLight();
-    }*/
-    if(!vc.is_sleeping() && !vc.is_listening()) {
-        int id = vc.getCommand();
-        if(id >= 0) {
-            logicAction(id);
-        } else {
-            //PERDONE, NO LE HE ENTENDIDO
+    if(!vc.is_sleeping()) {
+        if(mov.refresh()) {
+            inter.changeLight();
         }
-        if(!vc.is_sleeping()) {
-            vc.readCommand();
-        }
+        if(!vc.is_listening()) {
+            int id = vc.getCommand();
+            if(id >= 0) {
+                logicAction(id);
+            } else {
+                //PERDONE, NO LE HE ENTENDIDO
+            }
+            if(!vc.is_sleeping()) {
+                vc.readCommand();
+            }
+        } 
     }
-    /*long IRCode = ir.read();
+    long IRCode = ir.read();
     if(vc.is_sleeping() && IRCode == IRtransmitter::ENCENDER) {
         vc.despertar();
-    }*/
+    }
 }
 
 void Jarvis::logicAction(int id) {
@@ -42,6 +43,7 @@ void Jarvis::logicAction(int id) {
     } else if (vc.get_group() == 1) {
         if(id == 0 || id == 1) { //Enceder/apagar luz
             inter.changeLight();
+            mov.set_activated(!mov.is_activated());
             vc.set_group(0);
         } else if(id == 2) { //Presentate
             vc.play(SND_presentate);

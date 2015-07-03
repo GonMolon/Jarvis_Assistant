@@ -20,9 +20,16 @@ bool Movimiento::is_moving() const {
 
 bool Movimiento::refresh() {
     if(activado) {
-        if(movimiento != digitalRead(PIN_MOVIMIENTO)) {
-            movimiento = !movimiento;
-            digitalWrite(PIN_LED, movimiento);
+        if(digitalRead(PIN_MOVIMIENTO)) {
+            timer.reset();
+            if(!movimiento) {
+                movimiento = true;
+                digitalWrite(PIN_LED, HIGH);
+                return true;
+            }
+        } else if(movimiento && timer.is_finished()){
+            movimiento = false;
+            digitalWrite(PIN_LED, LOW);
             return true;
         }
     }
