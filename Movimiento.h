@@ -6,10 +6,10 @@
 class Movimiento{
     const int PIN_MOVIMIENTO = 6;
     const int PIN_LED = 11;
-    const int interval = 5;
+    const int INTERVAL = 5;
     bool activado = true;
     bool movimiento = false;
-    Timer timer = Timer(interval);
+    Timer timer = Timer(INTERVAL);
 public:
     Movimiento();
     bool is_activated() const;

@@ -6,6 +6,7 @@
 #include "IRtransmitter.h"
 #include "Movimiento.h"
 #include "Termometro.h"
+#include "TimeDate.h"
 
 class Jarvis {
   private:
@@ -14,6 +15,7 @@ class Jarvis {
     IRtransmitter ir;
     Movimiento mov;
     Termometro term;
+    TimeDate time;
     bool alarma = false;
     void logicAction(int id);
     void resumen_dia();

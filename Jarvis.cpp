@@ -1,5 +1,7 @@
 #include "Jarvis.h"
 #include "Constants.h"
+#include "Database.h"
+#include "HttpRequest.h"
 
 Jarvis::Jarvis() {
 
@@ -100,8 +102,9 @@ void Jarvis::resumen_dia() {
 }
 
 void Jarvis::hora() {
-    vc.play(SND_hora_10);
-    vc.play(SND_min_5);
+    time.refresh();
+    Serial.println(time.getHour());
+    Serial.println(time.getMin());
 }
 
 void Jarvis::dia() {

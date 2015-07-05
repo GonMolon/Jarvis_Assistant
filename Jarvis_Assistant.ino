@@ -1,8 +1,14 @@
-#include "Jarvis.h"
 #include <EasyVR.h>
 #include <SoftwareSerial.h>
 #include <IRremote.h>
 #include <Servo.h>
+#include <SPI.h>
+#include <Ethernet.h>
+#include <EEPROM.h>
+
+#include "Jarvis.h"
+#include "HttpRequest.h"
+#include "Database.h"
 
 Jarvis jarvis;
 
