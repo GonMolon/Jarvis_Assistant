@@ -7,7 +7,7 @@ class Interruptor {
     Servo servo;
     const int pos1 = 60; //8 //550
     const int pos2 = 160; //73 //1400
-    const int PIN_SERVO = 9;
+    const int PIN_SERVO = 8;
 public:
     Interruptor();
     void changeLight();

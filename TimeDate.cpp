@@ -35,7 +35,10 @@ void TimeDate::setMilliseconds(unsigned long milli) {
 
 void TimeDate::refresh() {
     HttpRequest request;
-    setMilliseconds(request.getTime());
+    int millis = request.getTime();
+    if(millis != -1) {
+        setMilliseconds(millis);
+    }
 }
 
 

@@ -5,8 +5,8 @@
 
 class Movimiento{
     const int PIN_MOVIMIENTO = 6;
-    const int PIN_LED = 11;
-    const int INTERVAL = 5;
+    const int PIN_LED = 9;
+    const int INTERVAL = 8;
     bool activado = true;
     bool movimiento = false;
     Timer timer = Timer(INTERVAL);

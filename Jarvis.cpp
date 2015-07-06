@@ -50,7 +50,7 @@ void Jarvis::logicAction(int id) {
         } else if(id == 2) { //Presentate
             vc.play(SND_presentate);
         } else if(id == 3) { //Chiste
-            int chiste = random(0, 4);
+            int chiste = millis()%3;
             vc.play(SND_chiste_1+chiste);
             vc.set_group(0);
         } else if(id == 4) { //Resumen
@@ -103,8 +103,21 @@ void Jarvis::resumen_dia() {
 
 void Jarvis::hora() {
     time.refresh();
-    Serial.println(time.getHour());
+    Serial.print(time.getHour());
+    Serial.print(":");
     Serial.println(time.getMin());
+    int index = time.getHour()%12 - 1;
+    if(index < 0) {
+       index = 11; 
+    }
+    vc.play(SND_hora_1+index);
+    index = ((int)(time.getMin()/double(5) + 0.5))%12; //arredondeando a 5 minutos
+    vc.play(SND_min_0+index);
+    if(time.getHour() >= 12) {
+        vc.play(SND_tarde);
+    } else {
+        vc.play(SND_manana);
+    }
 }
 
 void Jarvis::dia() {

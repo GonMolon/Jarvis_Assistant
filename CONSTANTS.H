@@ -26,7 +26,7 @@
 #define SND_hora_10             26
 #define SND_hora_11             27
 #define SND_hora_12             28
-#define SND_ma_ana              29
+#define SND_manana              29
 #define SND_mes_1_enero         30
 #define SND_mes_2_febrero       31
 #define SND_mes_3_marzo         32

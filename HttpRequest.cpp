@@ -32,7 +32,7 @@ unsigned long HttpRequest::getTime() {
     unsigned long lowWord = word(packetBuffer[42], packetBuffer[43]);
     unsigned long secsSince1900 = highWord << 16 | lowWord;
     const unsigned long seventyYears = 2208988800UL;
-    unsigned long milis = secsSince1900 - seventyYears;
+    unsigned long milis = secsSince1900 - seventyYears - 3600*2*1000;
     Udp.stop();
     return milis;
   } else {
