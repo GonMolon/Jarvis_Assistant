@@ -6,7 +6,7 @@
 
 class VoiceControl {
 private:
-    SoftwareSerial  port = SoftwareSerial (2,3);
+    SoftwareSerial  port = SoftwareSerial (2,9);
     EasyVR easyvr = EasyVR(port);
     const int lang = EasyVR::SPANISH;
     const int level = 1;

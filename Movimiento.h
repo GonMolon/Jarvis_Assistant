@@ -5,7 +5,7 @@
 
 class Movimiento{
     const int PIN_MOVIMIENTO = 6;
-    const int PIN_LED = 9;
+    const int PIN_LED = 5;
     const int INTERVAL = 8;
     bool activado = true;
     bool movimiento = false;

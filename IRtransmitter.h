@@ -25,6 +25,10 @@ public:
     static const unsigned long LOWER = 0xE0E0906F;
     static const unsigned long HIGHER = 0xE0E0609F;
     static const unsigned long VIDEO = 0xE0E0926D;
+
+    static const unsigned long LIGHT_ON = 0xDFD1BA23;
+    static const unsigned long LIGHT_OFF = 0x2D8BE614;
+
     IRtransmitter();
     void setup();
     void start();
