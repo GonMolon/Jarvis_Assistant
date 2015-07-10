@@ -18,6 +18,10 @@ bool Movimiento::is_moving() const {
     return movimiento;
 }
 
+bool is_light_fixed() const {
+    return light_fixed;
+}
+
 bool Movimiento::refresh() {
     if(activado) {
         if(digitalRead(PIN_MOVIMIENTO)) {
