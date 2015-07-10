@@ -11,10 +11,9 @@ IRtransmitter::IRtransmitter() {
     irrecv.enableIRIn();
 }
 
-void IRtransmitter::start() {
-    sendNEC(SPEAKER_ON);
+void IRtransmitter::speaker_on() {
+    sendNEC(SPEAKERS_ON);
     delay(200);
-    play();
 }
 
 void IRtransmitter::play() {

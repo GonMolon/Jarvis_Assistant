@@ -10,11 +10,13 @@ Jarvis::Jarvis() {
 void Jarvis::refresh() { 
     if(!vc.is_sleeping()) {
         if(mov.refresh()) {
-            if(mov.isMoving()) {
+            if(mov.is_moving()) {
                 ir.light_on();
+                delay(200);
                 ir.level_3();
             } else {
                 ir.light_off();
+                delay(200);
                 ir.level_1();
             }
             inter.changeLight();
@@ -66,7 +68,9 @@ void Jarvis::logicAction(int id) {
             vc.set_group(0);
         } else if(id == 7) { //Poner m�sica
             vc.play(0);
-            ir.start();
+            ir.light_on();
+            ir.speaker_on();
+            ir.play();
             vc.set_group(0);
         } else if(id == 8) { //Hora
             hora();

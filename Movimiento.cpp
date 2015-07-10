@@ -18,7 +18,7 @@ bool Movimiento::is_moving() const {
     return movimiento;
 }
 
-bool is_light_fixed() const {
+bool Movimiento::is_light_fixed() const {
     return light_fixed;
 }
 
