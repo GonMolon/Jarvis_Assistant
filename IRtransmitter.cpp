@@ -8,45 +8,45 @@ void IRtransmitter::setup() {
 }
 
 void IRtransmitter::start() {
-    sendIR(ENCENDER);
+    sendIR(SPEAKERS_ON);
     delay(200);
     play();
 }
 
 void IRtransmitter::play() {
-    sendIR(PLAY);
+    sendIR(SPEAKERS_PLAY);
 }
 
 void IRtransmitter::next() {
-    sendIR(NEXT);
+    sendIR(SPEAKERS_NEXT);
 }
 
 
 void IRtransmitter::previous() {
-    sendIR(PREVIOUS);
+    sendIR(SPEAKERS_PREVIOUS);
 }
 
 void IRtransmitter::playlist(int id) {
     for(int i = 0; i < 6; i++) {
-        sendIR(MENU);
+        sendIR(SPEAKERS_MENU);
     }
     for(int i = 0; i < 5; i++) {
-        sendIR(UP);
+        sendIR(SPEAKERS_UP);
     }
-    sendIR(SELECT);
+    sendIR(SPEAKERS_SELECT);
     delay(200);
     for(int i = 0; i < 3; i++) {
-        sendIR(UP);
+        sendIR(SPEAKERS_UP);
     }
-    sendIR(SELECT);
+    sendIR(SPEAKERS_SELECT);
     for(int i = 0; i < 10; i++) {
-        sendIR(UP);
+        sendIR(SPEAKERS_UP);
     }
     for(int i = 0; i < id; i++) {
-        sendIR(DOWN);
+        sendIR(SPEAKERS_DOWN);
     }
-    sendIR(SELECT);
-    sendIR(SELECT);
+    sendIR(SPEAKERS_SELECT);
+    sendIR(SPEAKERS_SELECT);
 }
 
 long IRtransmitter::read() {
@@ -65,5 +65,10 @@ void IRtransmitter::sendIR(unsigned long ircode) {
         irsend.sendNEC(ircode, 32);
         delay(10);
     }
+    delay(200);
+}
+
+void IRtransmitter::sendIR(unsigned int (&ircode)[99]) {
+    irsend.sendRaw(ircode, 99 , 38);
     delay(200);
 }

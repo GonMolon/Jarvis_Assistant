@@ -7,8 +7,6 @@
 #include <EEPROM.h>
 
 #include "Jarvis.h"
-#include "HttpRequest.h"
-#include "Database.h"
 
 Jarvis jarvis;
 
