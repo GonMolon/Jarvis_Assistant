@@ -8,14 +8,14 @@
 
 #include "Jarvis.h"
 
-Jarvis jarvis;
+Jarvis* jarvis;
 
 void setup() {
   Serial.begin(9600);
-  jarvis.setup();
+  jarvis = new Jarvis();
 }
 
 void loop() {
-  jarvis.refresh();
+  jarvis->refresh();
 }
 

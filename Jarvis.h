@@ -23,7 +23,6 @@ class Jarvis {
     void dia();
   public:
     Jarvis();
-    void setup();
     void refresh();
 };
 

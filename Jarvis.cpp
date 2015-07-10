@@ -4,18 +4,19 @@
 #include "HttpRequest.h"
 
 Jarvis::Jarvis() {
-
-}
-
-void Jarvis::setup() {
-    vc.setup();
-    ir.setup();
     vc.readCommand();
 }
 
 void Jarvis::refresh() { 
     if(!vc.is_sleeping()) {
         if(mov.refresh()) {
+            if(mov.isMoving()) {
+                ir.light_on();
+                ir.level_3();
+            } else {
+                ir.light_off();
+                ir.level_1();
+            }
             inter.changeLight();
         }
         if(!vc.is_listening()) {
@@ -31,7 +32,7 @@ void Jarvis::refresh() {
         } 
     }
     long IRCode = ir.read();
-    if(vc.is_sleeping() && IRCode == IRtransmitter::ENCENDER) {
+    if(vc.is_sleeping() && IRCode == IRtransmitter::SPEAKERS_ON) {
         vc.despertar();
     }
 }

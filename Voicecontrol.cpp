@@ -2,10 +2,6 @@
 #include "Arduino.h"
 
 VoiceControl::VoiceControl() {
-
-}
-
-void VoiceControl::setup() {
     port.begin(9600);
     while (!easyvr.detect()) {
         Serial.println(F("EasyVR not detected!"));

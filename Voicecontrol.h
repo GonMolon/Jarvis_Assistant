@@ -17,7 +17,6 @@ private:
     
 public:
     VoiceControl();
-    void setup();
     bool is_sleeping();
     bool is_listening();
     int get_group();
