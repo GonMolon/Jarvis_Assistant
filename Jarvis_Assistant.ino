@@ -5,7 +5,7 @@
 #include <SPI.h>
 #include <Ethernet.h>
 #include <EEPROM.h>
-
+#include <DHT.h>
 #include "Jarvis.h"
 
 Jarvis* jarvis;
