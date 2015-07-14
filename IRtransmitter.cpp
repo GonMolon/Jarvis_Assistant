@@ -13,7 +13,6 @@ IRtransmitter::IRtransmitter() {
 
 void IRtransmitter::speaker_on() {
     sendNEC(SPEAKERS_ON);
-    delay(200);
 }
 
 void IRtransmitter::play() {
@@ -95,5 +94,8 @@ void IRtransmitter::sendNEC(unsigned long ircode) {
 }
 
 void IRtransmitter::sendRAW(unsigned int (&ircode)[99]) {
-    irsend.sendRaw(ircode, 99 , 38);
+    for(int i = 0; i < 1; i++) {
+        irsend.sendRaw(ircode, 99 , 38);
+        delay(10);
+    }
 }

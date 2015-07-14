@@ -68,8 +68,8 @@ void Jarvis::logicAction(int id) {
             vc.set_group(0);
         } else if(id == 7) { //Poner m�sica
             vc.play(0);
-            ir.light_on();
             ir.speaker_on();
+            delay(200);
             ir.play();
             vc.set_group(0);
         } else if(id == 8) { //Hora
