@@ -13,7 +13,6 @@ Jarvis* jarvis;
 void setup() {
   Serial.begin(9600);
   jarvis = new Jarvis();
-  d
 }
 
 void loop() {
