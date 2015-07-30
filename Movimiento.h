@@ -21,6 +21,7 @@ public:
     bool is_moving() const;
     bool is_light_fixed() const;
     int get_light_level() const;
+    int get_light() const;
     bool refresh();
 };
 

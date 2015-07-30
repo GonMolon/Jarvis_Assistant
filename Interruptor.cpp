@@ -19,3 +19,17 @@ void Interruptor::changeLight() {
     }
     servo.detach();
 }
+
+void Interruptor::on() {
+    if(!enciendido) {
+        changeLight();
+    }
+    encendido = true;
+}
+
+void Interrupor::off() {
+    if(enciendido) {
+        changeLight();
+    }
+    encendido = false;
+}

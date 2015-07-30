@@ -12,7 +12,7 @@ public:
     static void reset();
     static int read_int(int pos);
     static void write_int(int pos, int value);
-    static unsigned long read_long(int pos);
+    static long read_long(int pos);
     static void write_long(int pos, unsigned long value);
 };
 

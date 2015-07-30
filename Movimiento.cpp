@@ -32,6 +32,10 @@ int Movimiento::get_light_level() const {
     }
 }
 
+int Movimiento::get_light() const {
+    return analogRead(PIN_LIGHT);
+}
+
 bool Movimiento::refresh() {
     if(activado) {
         if(digitalRead(PIN_MOVIMIENTO)) {

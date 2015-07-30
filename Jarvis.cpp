@@ -4,6 +4,15 @@
 #include "HttpRequest.h"
 
 Jarvis::Jarvis() {
+    vc.play(SND_inicio);
+    ir.light_off();
+    delay(200);
+    int light1 = mov.get_light();
+    inter.changeLight();
+    int light2 = mov.get_light();
+    if(light1 < light2) {
+        inter.changeLight();
+    }
     vc.readCommand();
 }
 
@@ -11,27 +20,30 @@ void Jarvis::refresh() {
     if(!vc.is_sleeping()) {
         if(mov.refresh()) {
             if(mov.is_moving()) {
-                ir.light_on();
+                if(!mov.is_light_fixed()) {
+                    ir.light_on();
+                    inter.on();
+                }
                 delay(200);
                 ir.level_3();
             } else {
-                ir.light_off();
+                if(!mov.is_light_fixed()) {
+                    ir.light_off();
+                    inter.off();
+                }
                 delay(200);
                 ir.level_1();
             }
-            inter.changeLight();
         }
         if(!vc.is_listening()) {
             int id = vc.getCommand();
             if(id >= 0) {
                 logicAction(id);
             } else {
-                //PERDONE, NO LE HE ENTENDIDO
+                vc.check_understood();
             }
-            if(!vc.is_sleeping()) {
-                vc.readCommand();
-            }
-        } 
+            vc.readCommand();
+        }
     }
     long IRCode = ir.read();
     if(vc.is_sleeping() && IRCode == IRtransmitter::SPEAKERS_ON) {
@@ -66,7 +78,7 @@ void Jarvis::logicAction(int id) {
         } else if(id == 6) { //Cancelar
             vc.play(0);
             vc.set_group(0);
-        } else if(id == 7) { //Poner m�sica
+        } else if(id == 7) { //Poner musica
             vc.play(0);
             ir.speaker_on();
             delay(200);

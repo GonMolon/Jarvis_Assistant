@@ -26,6 +26,7 @@ public:
     void play(int track);
     void desactivar();
     void despertar();
+    void check_understood();
 };
 
 #endif // VOICECONTROL_H

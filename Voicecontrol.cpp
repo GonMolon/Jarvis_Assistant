@@ -71,3 +71,8 @@ void VoiceControl::set_group(int group) {
     this->group = group;
 }
 
+void VoiceControl::check_understood() {
+    if (easyvr.getError() >= 0) {
+        play(SND_not_understood);
+    }
+}

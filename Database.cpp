@@ -14,10 +14,10 @@ void Database::write_int(int pos, int value) {
     EEPROM.write(pos, value);
 }
 
-unsigned long Database::read_long(int pos) {
-    unsigned long high_value = read_int(pos);
-    unsigned long low_value = read_int(pos+1);
-    unsigned long value = high_value << 16 || low_value;
+long Database::read_long(int pos) {
+    long high_value = read_int(pos);
+    long low_value = read_int(pos+1);
+    long value = high_value << 16 || low_value;
     return value;
 }
 
