@@ -2,33 +2,34 @@
 #include "Arduino.h"
 
 Interruptor::Interruptor() {
-    
+    /*servo.attach(PIN_SERVO);
+    servo.write(POS1);
+    delay(WAIT_TIME);
+    servo.detach();*/
 }
 
 void Interruptor::changeLight() {
-    servo.attach(PIN_SERVO);
+    /*servo.attach(PIN_SERVO);
     int pos = servo.read();
-    if (pos <= pos1 + 40) {
-        pos = pos2;
+    if (pos == POS1) {
+        pos = POS2;
     } else {
-        pos = pos1;
+        pos = POS1;
     }
-    for(int i = 0; i < 30; ++i) {
-        servo.write(pos);
-        delay(15);
-    }
-    servo.detach();
+    servo.write(pos);
+    delay(WAIT_TIME);
+    servo.detach();*/
 }
 
 void Interruptor::on() {
-    if(!enciendido) {
+    if(!encendido) {
         changeLight();
     }
     encendido = true;
 }
 
-void Interrupor::off() {
-    if(enciendido) {
+void Interruptor::off() {
+    if(encendido) {
         changeLight();
     }
     encendido = false;

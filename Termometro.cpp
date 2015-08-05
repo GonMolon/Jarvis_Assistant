@@ -2,25 +2,27 @@
 #include "Arduino.h"
 
 Termometro::Termometro() {
-     dht.begin();
 }
 
-void Termometro::refresh() {
-    float t = dht.readTemperature();
-    float h = dht.readHumidity();
-    if (isnan(t)) {
-        this->t = t;
+int Termometro::get_temperature() {
+    int i = 3;
+    while(i > 0) {
+        if(dht.read(DHTPIN) == DHTLIB_OK) {
+            return (int) (dht.temperature + 0.5);
+        }
+        --i;
     }
-    if (isnan(h)) {
-        this->h = h;
+    return -1;
+}
+
+int Termometro::get_humidity() {
+    int i = 3;
+    while(i > 0) {
+        if(dht.read(DHTPIN) == DHTLIB_OK) {
+            return ((int) (dht.humidity/10 + 0.5))*10;
+        }
+        --i;
     }
-}
-
-float Termometro::get_temperature() {
-    return t;
-}
-
-float Termometro::get_humidity() {
-    return h;
+    return -1;
 }
 

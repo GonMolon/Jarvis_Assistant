@@ -3,12 +3,12 @@
 
 class Timer {
     unsigned long finishTime;
-    int duration;
+    unsigned int duration;
 public:
-    Timer(int duration);
+    Timer(unsigned int duration);
     void reset();
     bool is_finished() const;
-    int get_remaining() const;
+    long get_remaining() const;
 };
 
 #endif // TIMER_H

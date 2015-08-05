@@ -1,4 +1,5 @@
 #include "Voicecontrol.h"
+#include "SOUNDS.h"
 #include "Arduino.h"
 
 VoiceControl::VoiceControl() {
@@ -10,16 +11,17 @@ VoiceControl::VoiceControl() {
     Serial.print(F("EasyVR detected, version: "));
     Serial.println(easyvr.getID());
     easyvr.setPinOutput(EasyVR::IO1, HIGH);
-    easyvr.setTimeout(timeout);
-    easyvr.setLanguage(lang);
-    easyvr.setLevel(level);
+    easyvr.setTimeout(TIMEOUT);
+    easyvr.setLanguage(LANG);
+    easyvr.setLevel(LEVEL);
+    sleeping = false;
 }
 
-void VoiceControl::readCommand() {
-    easyvr.recognizeCommand(group);
+void VoiceControl::readTrigger() {
+    easyvr.recognizeCommand(0);
 }
 
-int VoiceControl::getCommand() {
+int VoiceControl::getTrigger() {
     int id = easyvr.getCommand();
     if (id >= 0) {
         Serial.print(F("Command: "));
@@ -37,6 +39,26 @@ int VoiceControl::getCommand() {
     return id;
 }
 
+int VoiceControl::readCommand(int group, int repet) {
+    easyvr.stop();
+    easyvr.recognizeCommand(group);
+    while(is_listening()) {}
+    int id = easyvr.getCommand();
+    if(id >= 0) {
+        Serial.print(F("Command: "));
+        Serial.println(id);
+        return id;
+    } else {
+        --repet;
+        if(repet == 0) {
+            play(SND_no_entendido);
+            delay(1000);
+            return -1;
+        }
+        return readCommand(group, repet);
+    }
+}
+
 void VoiceControl::desactivar() {
     easyvr.stop();
     easyvr.setPinOutput(EasyVR::IO1, LOW);
@@ -47,12 +69,12 @@ void VoiceControl::desactivar() {
 void VoiceControl::despertar() {
     sleeping = false;
     while(!easyvr.setPinOutput(EasyVR::IO1, HIGH)) {}
-    readCommand();
+    readTrigger();
 }
 
 void VoiceControl::play(int track) {
     easyvr.stop();
-    easyvr.playSound(track, vol);
+    easyvr.playSound(track, VOL);
 }
 
 bool VoiceControl::is_sleeping() {
@@ -61,18 +83,4 @@ bool VoiceControl::is_sleeping() {
 
 bool VoiceControl::is_listening() {
     return !easyvr.hasFinished();
-}
-
-int VoiceControl::get_group() {
-    return group;
-}
-
-void VoiceControl::set_group(int group) {
-    this->group = group;
-}
-
-void VoiceControl::check_understood() {
-    if (easyvr.getError() >= 0) {
-        play(SND_not_understood);
-    }
 }

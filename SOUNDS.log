@@ -1,0 +1,657 @@
+Loading hex image file C:\Sensory\FC3_1_16\bin\qs4\TESTAPP.HEX:
+    0000A300H - 0000A388H  size 00000089H
+    00000024H - 00000417H  size 000003F4H
+    00001799H - 000017E5H  size 0000004DH
+    00000000H - 00000007H  size 00000008H
+    0000000CH - 0000000FH  size 00000004H
+    00000018H - 0000001BH  size 00000004H
+    00000020H - 00000023H  size 00000004H
+    0000FFF8H - 0000FFFFH  size 00000008H
+    0000A389H - 0000A399H  size 00000011H
+    00000010H - 00000013H  size 00000004H
+    0000001CH - 0000001FH  size 00000004H
+    00000008H - 0000000BH  size 00000004H
+    00000014H - 00000017H  size 00000004H
+    0000A39AH - 0000B171H  size 00000DD8H
+    0000B200H - 0000B302H  size 00000103H
+    0000B308H - 0000B4A8H  size 000001A1H
+    0000B4AAH - 0000B53CH  size 00000093H
+    0000B540H - 0000B6E0H  size 000001A1H
+    0000B6E2H - 0000B774H  size 00000093H
+    0000B778H - 0000B918H  size 000001A1H
+    0000B91AH - 0000B9ACH  size 00000093H
+    0000B9B0H - 0000BB50H  size 000001A1H
+    0000BB52H - 0000BBE4H  size 00000093H
+    0000BBE8H - 0000BD88H  size 000001A1H
+    0000BD8AH - 0000BE1CH  size 00000093H
+    0000BE20H - 0000BFC0H  size 000001A1H
+    0000BFC2H - 0000C054H  size 00000093H
+    0000C058H - 0000C1F8H  size 000001A1H
+    0000C1FAH - 0000C28CH  size 00000093H
+    0000C290H - 0000C31EH  size 0000008FH
+    0000C320H - 0000C3D0H  size 000000B1H
+    0000C3D2H - 0000D6ADH  size 000012DCH
+    0000D700H - 0000DAF1H  size 000003F2H
+    0000FFF5H - 0000FFF7H  size 00000003H
+    0000DAF2H - 0000DC33H  size 00000142H
+    0000FFECH - 0000FFEEH  size 00000003H
+    0000DC34H - 0000E989H  size 00000D56H
+    0000FFF2H - 0000FFF4H  size 00000003H
+    0000E98AH - 0000FBE5H  size 0000125CH
+    00000418H - 00000A97H  size 00000680H
+    0000FBE6H - 0000FC05H  size 00000020H
+    00000A98H - 00001798H  size 00000D01H
+    0000FC06H - 0000FE2AH  size 00000225H
+    0000FE2CH - 0000FE8CH  size 00000061H
+    0000FE90H - 0000FEEEH  size 0000005FH
+    0000FEF0H - 0000FF89H  size 0000009AH
+
+Module SOUNDS.mco
+REL SEGMENT SegSNDTBL_SOUNDS allocation = 6
+REL SEGMENT SegSX_0 allocation = 6
+REL SEGMENT SegSX_1 allocation = 6
+REL SEGMENT SegSX_2 allocation = 6
+REL SEGMENT SegSX_3 allocation = 6
+REL SEGMENT SegSX_4 allocation = 6
+REL SEGMENT SegSX_5 allocation = 6
+REL SEGMENT SegSX_6 allocation = 6
+REL SEGMENT SegSX_7 allocation = 6
+REL SEGMENT SegSX_8 allocation = 6
+REL SEGMENT SegSX_9 allocation = 6
+REL SEGMENT SegSX_10 allocation = 6
+REL SEGMENT SegSX_11 allocation = 6
+REL SEGMENT SegSX_12 allocation = 6
+REL SEGMENT SegSX_13 allocation = 6
+REL SEGMENT SegSX_14 allocation = 6
+REL SEGMENT SegSX_15 allocation = 6
+REL SEGMENT SegSX_16 allocation = 6
+REL SEGMENT SegSX_17 allocation = 6
+REL SEGMENT SegSX_18 allocation = 6
+REL SEGMENT SegSX_19 allocation = 6
+REL SEGMENT SegSX_20 allocation = 6
+REL SEGMENT SegSX_21 allocation = 6
+REL SEGMENT SegSX_22 allocation = 6
+REL SEGMENT SegSX_23 allocation = 6
+REL SEGMENT SegSX_24 allocation = 6
+REL SEGMENT SegSX_25 allocation = 6
+REL SEGMENT SegSX_26 allocation = 6
+REL SEGMENT SegSX_27 allocation = 6
+REL SEGMENT SegSX_28 allocation = 6
+REL SEGMENT SegSX_29 allocation = 6
+REL SEGMENT SegSX_30 allocation = 6
+REL SEGMENT SegSX_31 allocation = 6
+REL SEGMENT SegSX_32 allocation = 6
+REL SEGMENT SegSX_33 allocation = 6
+REL SEGMENT SegSX_34 allocation = 6
+REL SEGMENT SegSX_35 allocation = 6
+REL SEGMENT SegSX_36 allocation = 6
+REL SEGMENT SegSX_37 allocation = 6
+REL SEGMENT SegSX_38 allocation = 6
+REL SEGMENT SegSX_39 allocation = 6
+REL SEGMENT SegSX_40 allocation = 6
+REL SEGMENT SegSX_41 allocation = 6
+REL SEGMENT SegSX_42 allocation = 6
+REL SEGMENT SegSX_43 allocation = 6
+REL SEGMENT SegSX_44 allocation = 6
+REL SEGMENT SegSX_45 allocation = 6
+REL SEGMENT SegSX_46 allocation = 6
+REL SEGMENT SegSX_47 allocation = 6
+REL SEGMENT SegSX_48 allocation = 6
+REL SEGMENT SegSX_49 allocation = 6
+REL SEGMENT SegSX_50 allocation = 6
+REL SEGMENT SegSX_51 allocation = 6
+REL SEGMENT SegSX_52 allocation = 6
+REL SEGMENT SegSX_53 allocation = 6
+REL SEGMENT SegSX_54 allocation = 6
+REL SEGMENT SegSX_55 allocation = 6
+REL SEGMENT SegSX_56 allocation = 6
+REL SEGMENT SegSX_57 allocation = 6
+REL SEGMENT SegSX_58 allocation = 6
+REL SEGMENT SegSX_59 allocation = 6
+REL SEGMENT SegSX_60 allocation = 6
+REL SEGMENT SegSX_61 allocation = 6
+REL SEGMENT SegSX_62 allocation = 6
+REL SEGMENT SegSX_63 allocation = 6
+REL SEGMENT SegSX_64 allocation = 6
+REL SEGMENT SegSX_65 allocation = 6
+REL SEGMENT SegSX_66 allocation = 6
+REL SEGMENT SegSX_67 allocation = 6
+REL SEGMENT SegSX_68 allocation = 6
+REL SEGMENT SegSX_69 allocation = 6
+REL SEGMENT SegSX_70 allocation = 6
+REL SEGMENT SegSX_71 allocation = 6
+REL SEGMENT SegSX_72 allocation = 6
+REL SEGMENT SegSX_73 allocation = 6
+REL SEGMENT SegSX_74 allocation = 6
+REL SEGMENT SegSX_75 allocation = 6
+REL SEGMENT SegSX_76 allocation = 6
+REL SEGMENT SegSX_77 allocation = 6
+REL SEGMENT SegSX_78 allocation = 6
+REL SEGMENT SegSX_79 allocation = 6
+REL SEGMENT SegSX_80 allocation = 6
+REL SEGMENT SegSX_81 allocation = 6
+REL SEGMENT SegSX_82 allocation = 6
+REL SEGMENT SegSX_83 allocation = 6
+REL SEGMENT SegSX_84 allocation = 6
+REL SEGMENT SegSX_85 allocation = 6
+REL SEGMENT SegSX_86 allocation = 6
+REL SEGMENT SegSX_87 allocation = 6
+REL SEGMENT SegSX_88 allocation = 6
+REL SEGMENT SegSX_89 allocation = 6
+REL SEGMENT SegSX_90 allocation = 6
+REL SEGMENT SegSX_91 allocation = 6
+REL SEGMENT SegSX_92 allocation = 6
+REL SEGMENT SegSX_93 allocation = 6
+REL SEGMENT SegSX_94 allocation = 6
+REL SEGMENT SegSX_95 allocation = 6
+REL SEGMENT SegSX_96 allocation = 6
+REL SEGMENT SegSX_97 allocation = 6
+REL SEGMENT SegSX_98 allocation = 6
+REL SEGMENT SegSX_99 allocation = 6
+REL SEGMENT SegSX_100 allocation = 6
+REL SEGMENT SegSX_101 allocation = 6
+REL SEGMENT SegSX_102 allocation = 6
+REL SEGMENT SegSX_103 allocation = 6
+REL SEGMENT SegSX_104 allocation = 6
+REL SEGMENT SegSX_105 allocation = 6
+REL SEGMENT SegSX_106 allocation = 6
+REL SEGMENT SegSX_107 allocation = 6
+REL SEGMENT SegSX_108 allocation = 6
+REL SEGMENT SegSX_109 allocation = 6
+REL SEGMENT SegSX_110 allocation = 6
+REL SEGMENT SegSX_111 allocation = 6
+REL SEGMENT SegSX_112 allocation = 6
+REL SEGMENT SegSX_113 allocation = 6
+REL SEGMENT SegSX_114 allocation = 6
+REL SEGMENT SegSX_115 allocation = 6
+REL SEGMENT SegSX_116 allocation = 6
+REL SEGMENT SegSX_117 allocation = 6
+REL SEGMENT SegSX_118 allocation = 6
+EXTRN _USE_PCM_
+Number of Segments = 120
+  1 size =    954  align = 0  type = 2  allocation = 6  name = SegSNDTBL_SOUNDS, >= 000000H 
+  2 size =   5986  align = 0  type = 2  allocation = 6  name = SegSX_0, >= 000000H 
+  3 size =   9907  align = 0  type = 2  allocation = 6  name = SegSX_1, >= 000000H 
+  4 size =   7976  align = 0  type = 2  allocation = 6  name = SegSX_2, >= 000000H 
+  5 size =   4378  align = 0  type = 2  allocation = 6  name = SegSX_3, >= 000000H 
+  6 size =  13442  align = 0  type = 2  allocation = 6  name = SegSX_4, >= 000000H 
+  7 size =  12606  align = 0  type = 2  allocation = 6  name = SegSX_5, >= 000000H 
+  8 size =  33234  align = 0  type = 2  allocation = 6  name = SegSX_6, >= 000000H 
+  9 size =  14081  align = 0  type = 2  allocation = 6  name = SegSX_7, >= 000000H 
+ 10 size =  27323  align = 0  type = 2  allocation = 6  name = SegSX_8, >= 000000H 
+ 11 size =  13054  align = 0  type = 2  allocation = 6  name = SegSX_9, >= 000000H 
+ 12 size =   8299  align = 0  type = 2  allocation = 6  name = SegSX_10, >= 000000H 
+ 13 size =   3286  align = 0  type = 2  allocation = 6  name = SegSX_11, >= 000000H 
+ 14 size =  13630  align = 0  type = 2  allocation = 6  name = SegSX_12, >= 000000H 
+ 15 size =   4637  align = 0  type = 2  allocation = 6  name = SegSX_13, >= 000000H 
+ 16 size =   5215  align = 0  type = 2  allocation = 6  name = SegSX_14, >= 000000H 
+ 17 size =   6049  align = 0  type = 2  allocation = 6  name = SegSX_15, >= 000000H 
+ 18 size =   4315  align = 0  type = 2  allocation = 6  name = SegSX_16, >= 000000H 
+ 19 size =   4958  align = 0  type = 2  allocation = 6  name = SegSX_17, >= 000000H 
+ 20 size =   4959  align = 0  type = 2  allocation = 6  name = SegSX_18, >= 000000H 
+ 21 size =   3671  align = 0  type = 2  allocation = 6  name = SegSX_19, >= 000000H 
+ 22 size =  13181  align = 0  type = 2  allocation = 6  name = SegSX_20, >= 000000H 
+ 23 size =  13759  align = 0  type = 2  allocation = 6  name = SegSX_21, >= 000000H 
+ 24 size =   9391  align = 0  type = 2  allocation = 6  name = SegSX_22, >= 000000H 
+ 25 size =   4828  align = 0  type = 2  allocation = 6  name = SegSX_23, >= 000000H 
+ 26 size =   3544  align = 0  type = 2  allocation = 6  name = SegSX_24, >= 000000H 
+ 27 size =   5215  align = 0  type = 2  allocation = 6  name = SegSX_25, >= 000000H 
+ 28 size =   5602  align = 0  type = 2  allocation = 6  name = SegSX_26, >= 000000H 
+ 29 size =   5666  align = 0  type = 2  allocation = 6  name = SegSX_27, >= 000000H 
+ 30 size =   5792  align = 0  type = 2  allocation = 6  name = SegSX_28, >= 000000H 
+ 31 size =   5730  align = 0  type = 2  allocation = 6  name = SegSX_29, >= 000000H 
+ 32 size =   5279  align = 0  type = 2  allocation = 6  name = SegSX_30, >= 000000H 
+ 33 size =   4957  align = 0  type = 2  allocation = 6  name = SegSX_31, >= 000000H 
+ 34 size =   4766  align = 0  type = 2  allocation = 6  name = SegSX_32, >= 000000H 
+ 35 size =   5793  align = 0  type = 2  allocation = 6  name = SegSX_33, >= 000000H 
+ 36 size =   5026  align = 0  type = 2  allocation = 6  name = SegSX_34, >= 000000H 
+ 37 size =   4573  align = 0  type = 2  allocation = 6  name = SegSX_35, >= 000000H 
+ 38 size =   8489  align = 0  type = 2  allocation = 6  name = SegSX_36, >= 000000H 
+ 39 size =  16528  align = 0  type = 2  allocation = 6  name = SegSX_37, >= 000000H 
+ 40 size =  19999  align = 0  type = 2  allocation = 6  name = SegSX_38, >= 000000H 
+ 41 size =   6114  align = 0  type = 2  allocation = 6  name = SegSX_39, >= 000000H 
+ 42 size =   4315  align = 0  type = 2  allocation = 6  name = SegSX_40, >= 000000H 
+ 43 size =   5601  align = 0  type = 2  allocation = 6  name = SegSX_41, >= 000000H 
+ 44 size =   4572  align = 0  type = 2  allocation = 6  name = SegSX_42, >= 000000H 
+ 45 size =   3737  align = 0  type = 2  allocation = 6  name = SegSX_43, >= 000000H 
+ 46 size =   5344  align = 0  type = 2  allocation = 6  name = SegSX_44, >= 000000H 
+ 47 size =   4315  align = 0  type = 2  allocation = 6  name = SegSX_45, >= 000000H 
+ 48 size =   4381  align = 0  type = 2  allocation = 6  name = SegSX_46, >= 000000H 
+ 49 size =   4828  align = 0  type = 2  allocation = 6  name = SegSX_47, >= 000000H 
+ 50 size =   6435  align = 0  type = 2  allocation = 6  name = SegSX_48, >= 000000H 
+ 51 size =   5986  align = 0  type = 2  allocation = 6  name = SegSX_49, >= 000000H 
+ 52 size =   5794  align = 0  type = 2  allocation = 6  name = SegSX_50, >= 000000H 
+ 53 size =   5986  align = 0  type = 2  allocation = 6  name = SegSX_51, >= 000000H 
+ 54 size =   4703  align = 0  type = 2  allocation = 6  name = SegSX_52, >= 000000H 
+ 55 size =   5149  align = 0  type = 2  allocation = 6  name = SegSX_53, >= 000000H 
+ 56 size =   5152  align = 0  type = 2  allocation = 6  name = SegSX_54, >= 000000H 
+ 57 size =   4702  align = 0  type = 2  allocation = 6  name = SegSX_55, >= 000000H 
+ 58 size =   3994  align = 0  type = 2  allocation = 6  name = SegSX_56, >= 000000H 
+ 59 size =   7398  align = 0  type = 2  allocation = 6  name = SegSX_57, >= 000000H 
+ 60 size =   3930  align = 0  type = 2  allocation = 6  name = SegSX_58, >= 000000H 
+ 61 size =   9069  align = 0  type = 2  allocation = 6  name = SegSX_59, >= 000000H 
+ 62 size =   5793  align = 0  type = 2  allocation = 6  name = SegSX_60, >= 000000H 
+ 63 size =   6949  align = 0  type = 2  allocation = 6  name = SegSX_61, >= 000000H 
+ 64 size =   6693  align = 0  type = 2  allocation = 6  name = SegSX_62, >= 000000H 
+ 65 size =   7270  align = 0  type = 2  allocation = 6  name = SegSX_63, >= 000000H 
+ 66 size =   2135  align = 0  type = 2  allocation = 6  name = SegSX_64, >= 000000H 
+ 67 size =   4059  align = 0  type = 2  allocation = 6  name = SegSX_65, >= 000000H 
+ 68 size =   2966  align = 0  type = 2  allocation = 6  name = SegSX_66, >= 000000H 
+ 69 size =   3994  align = 0  type = 2  allocation = 6  name = SegSX_67, >= 000000H 
+ 70 size =   3417  align = 0  type = 2  allocation = 6  name = SegSX_68, >= 000000H 
+ 71 size =   3416  align = 0  type = 2  allocation = 6  name = SegSX_69, >= 000000H 
+ 72 size =   4122  align = 0  type = 2  allocation = 6  name = SegSX_70, >= 000000H 
+ 73 size =   4764  align = 0  type = 2  allocation = 6  name = SegSX_71, >= 000000H 
+ 74 size =   4058  align = 0  type = 2  allocation = 6  name = SegSX_72, >= 000000H 
+ 75 size =   3929  align = 0  type = 2  allocation = 6  name = SegSX_73, >= 000000H 
+ 76 size =   3415  align = 0  type = 2  allocation = 6  name = SegSX_74, >= 000000H 
+ 77 size =   3608  align = 0  type = 2  allocation = 6  name = SegSX_75, >= 000000H 
+ 78 size =   3158  align = 0  type = 2  allocation = 6  name = SegSX_76, >= 000000H 
+ 79 size =   4057  align = 0  type = 2  allocation = 6  name = SegSX_77, >= 000000H 
+ 80 size =   3546  align = 0  type = 2  allocation = 6  name = SegSX_78, >= 000000H 
+ 81 size =   4250  align = 0  type = 2  allocation = 6  name = SegSX_79, >= 000000H 
+ 82 size =   4121  align = 0  type = 2  allocation = 6  name = SegSX_80, >= 000000H 
+ 83 size =   7271  align = 0  type = 2  allocation = 6  name = SegSX_81, >= 000000H 
+ 84 size =   6373  align = 0  type = 2  allocation = 6  name = SegSX_82, >= 000000H 
+ 85 size =   4893  align = 0  type = 2  allocation = 6  name = SegSX_83, >= 000000H 
+ 86 size =   6308  align = 0  type = 2  allocation = 6  name = SegSX_84, >= 000000H 
+ 87 size =   3736  align = 0  type = 2  allocation = 6  name = SegSX_85, >= 000000H 
+ 88 size =   4701  align = 0  type = 2  allocation = 6  name = SegSX_86, >= 000000H 
+ 89 size =   5857  align = 0  type = 2  allocation = 6  name = SegSX_87, >= 000000H 
+ 90 size =   6692  align = 0  type = 2  allocation = 6  name = SegSX_88, >= 000000H 
+ 91 size =   5985  align = 0  type = 2  allocation = 6  name = SegSX_89, >= 000000H 
+ 92 size =   6691  align = 0  type = 2  allocation = 6  name = SegSX_90, >= 000000H 
+ 93 size =   6628  align = 0  type = 2  allocation = 6  name = SegSX_91, >= 000000H 
+ 94 size =   6177  align = 0  type = 2  allocation = 6  name = SegSX_92, >= 000000H 
+ 95 size =   4957  align = 0  type = 2  allocation = 6  name = SegSX_93, >= 000000H 
+ 96 size =   5535  align = 0  type = 2  allocation = 6  name = SegSX_94, >= 000000H 
+ 97 size =   4252  align = 0  type = 2  allocation = 6  name = SegSX_95, >= 000000H 
+ 98 size =   5599  align = 0  type = 2  allocation = 6  name = SegSX_96, >= 000000H 
+ 99 size =   6500  align = 0  type = 2  allocation = 6  name = SegSX_97, >= 000000H 
+100 size =   6694  align = 0  type = 2  allocation = 6  name = SegSX_98, >= 000000H 
+101 size =   6243  align = 0  type = 2  allocation = 6  name = SegSX_99, >= 000000H 
+102 size =   7205  align = 0  type = 2  allocation = 6  name = SegSX_100, >= 000000H 
+103 size =   7463  align = 0  type = 2  allocation = 6  name = SegSX_101, >= 000000H 
+104 size =   6563  align = 0  type = 2  allocation = 6  name = SegSX_102, >= 000000H 
+105 size =   6049  align = 0  type = 2  allocation = 6  name = SegSX_103, >= 000000H 
+106 size =   5985  align = 0  type = 2  allocation = 6  name = SegSX_104, >= 000000H 
+107 size =   4250  align = 0  type = 2  allocation = 6  name = SegSX_105, >= 000000H 
+108 size =   5147  align = 0  type = 2  allocation = 6  name = SegSX_106, >= 000000H 
+109 size =   4763  align = 0  type = 2  allocation = 6  name = SegSX_107, >= 000000H 
+110 size =   5020  align = 0  type = 2  allocation = 6  name = SegSX_108, >= 000000H 
+111 size =   3865  align = 0  type = 2  allocation = 6  name = SegSX_109, >= 000000H 
+112 size =   4635  align = 0  type = 2  allocation = 6  name = SegSX_110, >= 000000H 
+113 size =   8429  align = 0  type = 2  allocation = 6  name = SegSX_111, >= 000000H 
+114 size =  77680  align = 0  type = 2  allocation = 6  name = SegSX_112, >= 000000H 
+115 size =   2774  align = 0  type = 2  allocation = 6  name = SegSX_113, >= 000000H 
+116 size =   5279  align = 0  type = 2  allocation = 6  name = SegSX_114, >= 000000H 
+117 size =  12024  align = 0  type = 2  allocation = 6  name = SegSX_115, >= 000000H 
+118 size =  13190  align = 0  type = 2  allocation = 6  name = SegSX_116, >= 000000H 
+119 size =  17683  align = 0  type = 2  allocation = 6  name = SegSX_117, >= 000000H 
+120 size =  18131  align = 0  type = 2  allocation = 6  name = SegSX_118, >= 000000H 
+
+
+
+Placing segment SegSNDTBL_SOUNDS at address 00004000
+PUBLIC SNDTBL_SOUNDS value = 00004000 in segment SegSNDTBL_SOUNDS
+
+Placing segment SegSX_112 at address 00010000
+PUBLIC SX_presentate value = 00010000 in segment SegSX_112
+
+Placing segment SegSX_6 at address 00022F70
+PUBLIC SX_chiste_1 value = 00022F70 in segment SegSX_6
+
+Placing segment SegSX_8 at address 0002B142
+PUBLIC SX_chiste_3 value = 0002B142 in segment SegSX_8
+
+Placing segment SegSX_38 at address 000043BA
+PUBLIC SX_inicio value = 000043BA in segment SegSX_38
+
+Placing segment SegSX_118 at address 00031BFD
+PUBLIC SX_no_entendido value = 00031BFD in segment SegSX_118
+
+Placing segment SegSX_117 at address 000362D0
+PUBLIC SX_ventilador value = 000362D0 in segment SegSX_117
+
+Placing segment SegSX_37 at address 0003A7E3
+PUBLIC SX_ido_dia value = 0003A7E3 in segment SegSX_37
+
+Placing segment SegSX_7 at address 0003E873
+PUBLIC SX_chiste_2 value = 0003E873 in segment SegSX_7
+
+Placing segment SegSX_21 at address 00041F74
+PUBLIC SX_error_internet value = 00041F74 in segment SegSX_21
+
+Placing segment SegSX_12 at address 00045533
+PUBLIC SX_despertador value = 00045533 in segment SegSX_12
+
+Placing segment SegSX_4 at address 00048A71
+PUBLIC SX_buenas_noches value = 00048A71 in segment SegSX_4
+
+Placing segment SegSX_116 at address 0004BEF3
+PUBLIC SX_vaya value = 0004BEF3 in segment SegSX_116
+
+Placing segment SegSX_20 at address 0004F279
+PUBLIC SX_dormir_musica value = 0004F279 in segment SegSX_20
+
+Placing segment SegSX_9 at address 000525F6
+PUBLIC SX_chiste_4 value = 000525F6 in segment SegSX_9
+
+Placing segment SegSX_5 at address 000558F4
+PUBLIC SX_buenos_dias value = 000558F4 in segment SegSX_5
+
+Placing segment SegSX_115 at address 00058A32
+PUBLIC SX_temperatura value = 00058A32 in segment SegSX_115
+
+Placing segment SegSX_1 at address 000017E6
+PUBLIC SX_alarma_off value = 000017E6 in segment SegSX_1
+
+Placing segment SegSX_22 at address 0005B92A
+PUBLIC SX_escuchar_musica value = 0005B92A in segment SegSX_22
+
+Placing segment SegSX_59 at address 0005DDD9
+PUBLIC SX_min_35 value = 0005DDD9 in segment SegSX_59
+
+Placing segment SegSX_36 at address 00060146
+PUBLIC SX_humedad value = 00060146 in segment SegSX_36
+
+Placing segment SegSX_111 at address 0006226F
+PUBLIC SX_pase_buen_dia value = 0006226F in segment SegSX_111
+
+Placing segment SegSX_10 at address 0006435C
+PUBLIC SX_chiste_oir value = 0006435C in segment SegSX_10
+
+Placing segment SegSX_2 at address 000663C7
+PUBLIC SX_alarma_on value = 000663C7 in segment SegSX_2
+
+Placing segment SegSX_101 at address 000682EF
+PUBLIC SX_num_36 value = 000682EF in segment SegSX_101
+
+Placing segment SegSX_57 at address 0006A016
+PUBLIC SX_min_25 value = 0006A016 in segment SegSX_57
+
+Placing segment SegSX_81 at address 0006BCFC
+PUBLIC SX_num_16 value = 0006BCFC in segment SegSX_81
+
+Placing segment SegSX_63 at address 0006D963
+PUBLIC SX_min_55 value = 0006D963 in segment SegSX_63
+
+Placing segment SegSX_100 at address 0006F5C9
+PUBLIC SX_num_35 value = 0006F5C9 in segment SegSX_100
+
+Placing segment SegSX_61 at address 000711EE
+PUBLIC SX_min_45 value = 000711EE in segment SegSX_61
+
+Placing segment SegSX_98 at address 00072D13
+PUBLIC SX_num_33 value = 00072D13 in segment SegSX_98
+
+Placing segment SegSX_62 at address 00074739
+PUBLIC SX_min_50 value = 00074739 in segment SegSX_62
+
+Placing segment SegSX_88 at address 0007615E
+PUBLIC SX_num_23 value = 0007615E in segment SegSX_88
+
+Placing segment SegSX_90 at address 00077B82
+PUBLIC SX_num_25 value = 00077B82 in segment SegSX_90
+
+Placing segment SegSX_91 at address 000795A5
+PUBLIC SX_num_26 value = 000795A5 in segment SegSX_91
+
+Placing segment SegSX_102 at address 0007AF89
+PUBLIC SX_num_37 value = 0007AF89 in segment SegSX_102
+
+Placing segment SegSX_97 at address 0007C92C
+PUBLIC SX_num_32 value = 0007C92C in segment SegSX_97
+
+Placing segment SegSX_48 at address 0007E290
+PUBLIC SX_mes_9_septiembre value = 0007E290 in segment SegSX_48
+
+Placing segment SegSX_82 at address 0007FBB3
+PUBLIC SX_num_17 value = 0007FBB3 in segment SegSX_82
+
+Placing segment SegSX_84 at address 00081498
+PUBLIC SX_num_19 value = 00081498 in segment SegSX_84
+
+Placing segment SegSX_99 at address 00082D3C
+PUBLIC SX_num_34 value = 00082D3C in segment SegSX_99
+
+Placing segment SegSX_92 at address 0008459F
+PUBLIC SX_num_27 value = 0008459F in segment SegSX_92
+
+Placing segment SegSX_39 at address 00085DC0
+PUBLIC SX_manana value = 00085DC0 in segment SegSX_39
+
+Placing segment SegSX_103 at address 000875A2
+PUBLIC SX_num_38 value = 000875A2 in segment SegSX_103
+
+Placing segment SegSX_15 at address 00088D43
+PUBLIC SX_dia_3_miercoles value = 00088D43 in segment SegSX_15
+
+Placing segment SegSX_51 at address 0008A4E4
+PUBLIC SX_mes_12_diciembre value = 0008A4E4 in segment SegSX_51
+
+Placing segment SegSX_49 at address 0008BC46
+PUBLIC SX_mes_11_noviembre value = 0008BC46 in segment SegSX_49
+
+Placing segment SegSX_0 at address 0008D3A8
+PUBLIC SX_adios value = 0008D3A8 in segment SegSX_0
+
+Placing segment SegSX_104 at address 0008EB0A
+PUBLIC SX_num_39 value = 0008EB0A in segment SegSX_104
+
+Placing segment SegSX_89 at address 0009026B
+PUBLIC SX_num_24 value = 0009026B in segment SegSX_89
+
+Placing segment SegSX_87 at address 000919CC
+PUBLIC SX_num_22 value = 000919CC in segment SegSX_87
+
+Placing segment SegSX_50 at address 000930AD
+PUBLIC SX_mes_11_octubre value = 000930AD in segment SegSX_50
+
+Placing segment SegSX_60 at address 0009474F
+PUBLIC SX_min_40 value = 0009474F in segment SegSX_60
+
+Placing segment SegSX_33 at address 00095DF0
+PUBLIC SX_hora_10 value = 00095DF0 in segment SegSX_33
+
+Placing segment SegSX_28 at address 00097491
+PUBLIC SX_hora_5 value = 00097491 in segment SegSX_28
+
+Placing segment SegSX_29 at address 00098B31
+PUBLIC SX_hora_6 value = 00098B31 in segment SegSX_29
+
+Placing segment SegSX_27 at address 0009A193
+PUBLIC SX_hora_4 value = 0009A193 in segment SegSX_27
+
+Placing segment SegSX_26 at address 0009B7B5
+PUBLIC SX_hora_3 value = 0009B7B5 in segment SegSX_26
+
+Placing segment SegSX_41 at address 0009CD97
+PUBLIC SX_mes_2_febrero value = 0009CD97 in segment SegSX_41
+
+Placing segment SegSX_96 at address 0009E378
+PUBLIC SX_num_31 value = 0009E378 in segment SegSX_96
+
+Placing segment SegSX_94 at address 0009F957
+PUBLIC SX_num_29 value = 0009F957 in segment SegSX_94
+
+Placing segment SegSX_44 at address 000A0EF6
+PUBLIC SX_mes_5_mayo value = 000A0EF6 in segment SegSX_44
+
+Placing segment SegSX_114 at address 000A23D6
+PUBLIC SX_tarde value = 000A23D6 in segment SegSX_114
+
+Placing segment SegSX_30 at address 000A3875
+PUBLIC SX_hora_7 value = 000A3875 in segment SegSX_30
+
+Placing segment SegSX_25 at address 000A4D14
+PUBLIC SX_hora_2 value = 000A4D14 in segment SegSX_25
+
+Placing segment SegSX_14 at address 000A6173
+PUBLIC SX_dia_2_martes value = 000A6173 in segment SegSX_14
+
+Placing segment SegSX_54 at address 000A75D2
+PUBLIC SX_min_10 value = 000A75D2 in segment SegSX_54
+
+Placing segment SegSX_53 at address 000A89F2
+PUBLIC SX_min_5 value = 000A89F2 in segment SegSX_53
+
+Placing segment SegSX_106 at address 000A9E0F
+PUBLIC SX_num_50 value = 000A9E0F in segment SegSX_106
+
+Placing segment SegSX_34 at address 000AB22A
+PUBLIC SX_hora_11 value = 000AB22A in segment SegSX_34
+
+Placing segment SegSX_108 at address 000AC5CC
+PUBLIC SX_num_70 value = 000AC5CC in segment SegSX_108
+
+Placing segment SegSX_18 at address 000AD968
+PUBLIC SX_dia_6_sabado value = 000AD968 in segment SegSX_18
+
+Placing segment SegSX_17 at address 000AECC7
+PUBLIC SX_dia_5_viernes value = 000AECC7 in segment SegSX_17
+
+Placing segment SegSX_93 at address 000B0025
+PUBLIC SX_num_28 value = 000B0025 in segment SegSX_93
+
+Placing segment SegSX_31 at address 000B1382
+PUBLIC SX_hora_8 value = 000B1382 in segment SegSX_31
+
+Placing segment SegSX_83 at address 000B26DF
+PUBLIC SX_num_18 value = 000B26DF in segment SegSX_83
+
+Placing segment SegSX_47 at address 000B39FC
+PUBLIC SX_mes_8_agosto value = 000B39FC in segment SegSX_47
+
+Placing segment SegSX_23 at address 000B4CD8
+PUBLIC SX_grados value = 000B4CD8 in segment SegSX_23
+
+Placing segment SegSX_32 at address 000B5FB4
+PUBLIC SX_hora_9 value = 000B5FB4 in segment SegSX_32
+
+Placing segment SegSX_71 at address 000B7252
+PUBLIC SX_num_6 value = 000B7252 in segment SegSX_71
+
+Placing segment SegSX_107 at address 000B84EE
+PUBLIC SX_num_60 value = 000B84EE in segment SegSX_107
+
+Placing segment SegSX_52 at address 000B9789
+PUBLIC SX_min_0 value = 000B9789 in segment SegSX_52
+
+Placing segment SegSX_55 at address 000BA9E8
+PUBLIC SX_min_15 value = 000BA9E8 in segment SegSX_55
+
+Placing segment SegSX_86 at address 000BBC46
+PUBLIC SX_num_21 value = 000BBC46 in segment SegSX_86
+
+Placing segment SegSX_13 at address 000BCEA3
+PUBLIC SX_dia_1_lunes value = 000BCEA3 in segment SegSX_13
+
+Placing segment SegSX_110 at address 000BE0C0
+PUBLIC SX_num_90 value = 000BE0C0 in segment SegSX_110
+
+Placing segment SegSX_35 at address 000BF2DB
+PUBLIC SX_hora_12 value = 000BF2DB in segment SegSX_35
+
+Placing segment SegSX_42 at address 000C04B8
+PUBLIC SX_mes_3_marzo value = 000C04B8 in segment SegSX_42
+
+Placing segment SegSX_46 at address 000091D9
+PUBLIC SX_mes_7julio value = 000091D9 in segment SegSX_46
+
+Placing segment SegSX_3 at address 000C1694
+PUBLIC SX_alegro value = 000C1694 in segment SegSX_3
+
+Placing segment SegSX_45 at address 000C27AE
+PUBLIC SX_mes_6_junio value = 000C27AE in segment SegSX_45
+
+Placing segment SegSX_40 at address 000C3889
+PUBLIC SX_mes_1_enero value = 000C3889 in segment SegSX_40
+
+Placing segment SegSX_16 at address 000C4964
+PUBLIC SX_dia_4_jueves value = 000C4964 in segment SegSX_16
+
+Placing segment SegSX_95 at address 000C5A3F
+PUBLIC SX_num_30 value = 000C5A3F in segment SegSX_95
+
+Placing segment SegSX_105 at address 000C6ADB
+PUBLIC SX_num_40 value = 000C6ADB in segment SegSX_105
+
+Placing segment SegSX_79 at address 000C7B75
+PUBLIC SX_num_14 value = 000C7B75 in segment SegSX_79
+
+Placing segment SegSX_70 at address 000C8C0F
+PUBLIC SX_num_5 value = 000C8C0F in segment SegSX_70
+
+Placing segment SegSX_80 at address 000C9C29
+PUBLIC SX_num_15 value = 000C9C29 in segment SegSX_80
+
+Placing segment SegSX_65 at address 000CAC42
+PUBLIC SX_num_0 value = 000CAC42 in segment SegSX_65
+
+Placing segment SegSX_72 at address 000CBC1D
+PUBLIC SX_num_7 value = 000CBC1D in segment SegSX_72
+
+Placing segment SegSX_77 at address 000CCBF7
+PUBLIC SX_num_12 value = 000CCBF7 in segment SegSX_77
+
+Placing segment SegSX_67 at address 000CDBD0
+PUBLIC SX_num_2 value = 000CDBD0 in segment SegSX_67
+
+Placing segment SegSX_56 at address 000CEB6A
+PUBLIC SX_min_20 value = 000CEB6A in segment SegSX_56
+
+Placing segment SegSX_58 at address 000CFB04
+PUBLIC SX_min_30 value = 000CFB04 in segment SegSX_58
+
+Placing segment SegSX_73 at address 000D0A5E
+PUBLIC SX_num_8 value = 000D0A5E in segment SegSX_73
+
+Placing segment SegSX_109 at address 000D19B7
+PUBLIC SX_num_80 value = 000D19B7 in segment SegSX_109
+
+Placing segment SegSX_43 at address 000D28D0
+PUBLIC SX_mes_4_abril value = 000D28D0 in segment SegSX_43
+
+Placing segment SegSX_85 at address 000D3769
+PUBLIC SX_num_20 value = 000D3769 in segment SegSX_85
+
+Placing segment SegSX_19 at address 000D4601
+PUBLIC SX_dia_7_domingo value = 000D4601 in segment SegSX_19
+
+Placing segment SegSX_75 at address 000D5458
+PUBLIC SX_num_10 value = 000D5458 in segment SegSX_75
+
+Placing segment SegSX_78 at address 000D6270
+PUBLIC SX_num_13 value = 000D6270 in segment SegSX_78
+
+Placing segment SegSX_24 at address 000D704A
+PUBLIC SX_hora_1 value = 000D704A in segment SegSX_24
+
+Placing segment SegSX_68 at address 000D7E22
+PUBLIC SX_num_3 value = 000D7E22 in segment SegSX_68
+
+Placing segment SegSX_69 at address 000D8B7B
+PUBLIC SX_num_4 value = 000D8B7B in segment SegSX_69
+
+Placing segment SegSX_74 at address 000D98D3
+PUBLIC SX_num_9 value = 000D98D3 in segment SegSX_74
+
+Placing segment SegSX_11 at address 000DA62A
+PUBLIC SX_cual value = 000DA62A in segment SegSX_11
+
+Placing segment SegSX_76 at address 000DB300
+PUBLIC SX_num_11 value = 000DB300 in segment SegSX_76
+
+Placing segment SegSX_66 at address 000DBF56
+PUBLIC SX_num_1 value = 000DBF56 in segment SegSX_66
+
+Placing segment SegSX_113 at address 000DCAEC
+PUBLIC SX_si value = 000DCAEC in segment SegSX_113
+
+Placing segment SegSX_64 at address 000DD5C2
+PUBLIC SX_no value = 000DD5C2 in segment SegSX_64
+
+0 collisions
+
+last address = 000DDE18

@@ -5,49 +5,36 @@ Movimiento::Movimiento() {
     pinMode(PIN_MOVIMIENTO, INPUT);
 }
 
-bool Movimiento::is_activated() const {
-    return activado;
+bool Movimiento::is_light_fixed() const {
+    return light_fixed;
 }
 
-void Movimiento::set_activated(bool activado) {
-    this->activado = activado;
+void Movimiento::set_light_fixed(bool light_fixed) {
+    this->light_fixed = light_fixed;
 }
 
 bool Movimiento::is_moving() const {
     return movimiento;
 }
 
-bool Movimiento::is_light_fixed() const {
-    return light_fixed;
-}
-
-int Movimiento::get_light_level() const {
-    int light = analogRead(PIN_LIGHT);
-    if(light > light_level_1) {
-        return 1;
-    } else if(light > light_level_2) {
-        return 2;
-    } else {
-        return 3;
-    }
+bool Movimiento::is_dark() const {
+    return LIGHT_LEVEL <= get_light();
 }
 
 int Movimiento::get_light() const {
     return analogRead(PIN_LIGHT);
 }
 
-bool Movimiento::refresh() {
-    if(activado) {
-        if(digitalRead(PIN_MOVIMIENTO)) {
-            timer.reset();
-            if(!movimiento) {
-                movimiento = true;
-                return true;
-            }
-        } else if(movimiento && timer.is_finished()){
-            movimiento = false;
+bool Movimiento::refresh(Timer &timer) {
+    if(digitalRead(PIN_MOVIMIENTO)) {
+        timer.reset();
+        if(!movimiento) {
+            movimiento = true;
             return true;
         }
+    } else if(movimiento && timer.is_finished()){
+        movimiento = false;
+        return true;
     }
     return false;
 }

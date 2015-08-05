@@ -1,21 +1,17 @@
 #ifndef TERMOMETRO_H
 #define TERMOMETRO_H
 
-#include <DHT.h>
+#include <dht11.h>
 
-#define DHTPIN 4
-#define DHTTYPE DHT11 
+#define DHTPIN 5
 
 class Termometro {
 private:
-    DHT dht = DHT(DHTPIN, DHTTYPE);
-    float t = -1;
-    float h = -1;
-    float get_temperature();
-    float get_humidity();
+    dht11 dht;
 public:
     Termometro();
-    void refresh();
+    int get_temperature();
+    int get_humidity();
 };
 
 #endif // TERMOMETRO_H

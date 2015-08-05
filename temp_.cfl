@@ -1,0 +1,5 @@
+-e
+-m "SOUNDS.log"
+-i "C:\Sensory\FC3_1_16\bin\qs4\TESTAPP.HEX"
+-p 4000h -a "SOUNDS.mco"
+-h "SOUNDS.hex"

@@ -13,6 +13,7 @@ private:
     decode_results results;
     void sendNEC(unsigned long ircode);
     void sendRAW(unsigned int (&ircode)[99]);
+    static const int WAIT_TIME = 200;
 public:
     static const unsigned long SPEAKERS_ON = 0xE0E0C23D;
     static const unsigned long SPEAKERS_MUTE = 0xE0E022DD;
@@ -29,16 +30,18 @@ public:
 
     IRtransmitter();
     void speaker_on();
+    void random();
     void play();
     void next();
     void previous();
     void playlist(int id);
+    void set_volume(int v);
+    void volume_up();
+    void volume_down();
 
     void light_on();
     void light_off();
     void level_0();
-    void level_1();
-    void level_2();
     void level_3();
     
     long read();

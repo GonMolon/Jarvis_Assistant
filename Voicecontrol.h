@@ -8,25 +8,22 @@ class VoiceControl {
 private:
     SoftwareSerial  port = SoftwareSerial (2,9);
     EasyVR easyvr = EasyVR(port);
-    const int lang = EasyVR::SPANISH;
-    const int level = 1;
-    const int vol = 31;
-    const int timeout = 5;
+    static const int LANG = EasyVR::SPANISH;
+    static const int LEVEL = 3;
+    static const int VOL = 31;
+    static const int TIMEOUT = 5;
     bool sleeping = false;
-    int group = 0;
-    
 public:
     VoiceControl();
+    void setup();
     bool is_sleeping();
     bool is_listening();
-    int get_group();
-    void set_group(int group);
-    void readCommand();
-    int getCommand();
+    int readCommand(int group, int repet);
+    void readTrigger();
+    int getTrigger();
     void play(int track);
     void desactivar();
     void despertar();
-    void check_understood();
 };
 
 #endif // VOICECONTROL_H

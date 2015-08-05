@@ -4,8 +4,8 @@
 #include <Servo.h>
 #include <SPI.h>
 #include <Ethernet.h>
-#include <EEPROM.h>
-#include <DHT.h>
+#include <dht11.h>
+#include <Time.h>
 #include "Jarvis.h"
 
 Jarvis* jarvis;

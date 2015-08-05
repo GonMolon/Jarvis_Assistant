@@ -6,9 +6,10 @@
 class Interruptor {
     Servo servo;
     bool encendido = false;
-    const int pos1 = 60; //8 //550
-    const int pos2 = 160; //73 //1400
-    const int PIN_SERVO = 8;
+    static const int POS1 = 70; //8 //550
+    static const int POS2 = 170; //73 //1400
+    static const int PIN_SERVO = 8;
+    static const int WAIT_TIME = 500;
 public:
     Interruptor();
     void changeLight();
