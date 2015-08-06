@@ -1,5 +1,6 @@
 #include "Jarvis.h"
 #include "SOUNDS.h"
+#include "Timetable.h"
 
 Jarvis::Jarvis() {
     vc.play(SND_inicio);
@@ -70,7 +71,7 @@ void Jarvis::sec_inicio() {
     } else if(id == 11) { //Weather
         sec_weather();
     } else if(id == 12) { //Poner musica
-        sec_musica(7);
+        sec_musica();
     } else if(id == 13) { //Menu musica
         sec_menu_musica();
     } else if(id == 14) { //Temperatura
@@ -132,10 +133,17 @@ bool Jarvis::check_time() {
 
 void Jarvis::sec_hora() {
     if(check_time()) {
+        vc.play(SND_son);
         say_time(time.getHour(), time.getMin());
+        vc.play(SND_hoy_es);
         vc.play(SND_dia_1_lunes + time.getDayOfWeek()-1);
         vc.play(SND_num_1 + time.getDay() - 1);
         vc.play(SND_mes_1_enero + time.getMonth() - 1);
+        if(time.getDayOfWeek() < 6) {
+            vc.play(SND_faltan);
+            vc.play(SND_num_0+(6-time.getDayOfWeek()));
+            vc.play(SND_dias);
+        }
     } else {
         delay(1000);
     }
@@ -188,7 +196,8 @@ void Jarvis::sec_dormir() {
         vc.play(SND_cual);
         id = vc.readCommand(5, 3);
         if(id != -1) {
-            vc.play(SND_alarma_on);
+            vc.play(SND_alarma_activada);
+            vc.play(SND_a);
             if(despertador) {
                 if(id == 1) {
                     say_time(8, 30);
@@ -201,6 +210,7 @@ void Jarvis::sec_dormir() {
                 }
             }
         } else {
+            vc.play(SND_alarma_cancelada);
             despertador = false;
         }
     }
@@ -253,7 +263,7 @@ void Jarvis::sec_despertar() {
 
 void Jarvis::sec_despertador(int hora, int min) {
     if(!check_time()) {
-        vc.play(SND_alarma_off);
+        vc.play(SND_alarma_cancelada);
     } else {
         TimeDate alarmTime(hora, min, time.getDay(), time.getMonth(), time.getYear());
         if(alarmTime < time) {
@@ -265,11 +275,13 @@ void Jarvis::sec_despertador(int hora, int min) {
         while(!alarm.is_finished()) {
             check_ir();
         }
-        sec_musica(1);
+        ir.set_volume(0);
+        sec_musica();
         for(int i = 0; i < 4; ++i) {
             delay(1000);
             ir.volume_up();
         }
+        delay(20*1000);
     }
     sec_despertar();
 }
@@ -297,17 +309,14 @@ void Jarvis::sec_aparecer() {
     }
     vc.play(SND_escuchar_musica);
     if(vc.readCommand(2,3) == 0) {
-        sec_musica(7);
+        sec_musica();
     }
     vc.readTrigger();
 }
 
 void Jarvis::sec_desaparecer() {
     vc.play(SND_pase_buen_dia);
-    ir.level_0();
-    delay(500);
-    ir.light_off();
-    inter.off();
+    sec_apagar_todo();
     delay(20*1000);
     while(!(mov.refresh(timer2) && mov.is_moving())) {}
     sec_aparecer();
@@ -317,13 +326,11 @@ void Jarvis::sec_weather() {
 
 }
 
-void Jarvis::sec_musica(int volumen) {
+void Jarvis::sec_musica() {
     vc.play(0);
     ir.speaker_on();
-    /*ir.random();
+    ir.random();
     delay(500);
-    ir.play();*/
-    ir.set_volume(volumen);
     ir.play();
 }
 
@@ -345,4 +352,49 @@ void Jarvis::sec_menu_musica() {
         ir.volume_down();
     }
     vc.readTrigger();
+}
+
+void Jarvis::sec_horario() {
+    Timetable::HorarioDia horario = Timetable::getHorario(time.getDayOfWeek());
+    if(horario.ocho == -1 && horario.diez == -1 && horario.doce == -1) {
+        vc.play(SND_no_clase);
+    } else {
+        vc.play(SND_clases);
+        int clase, hora;
+        for(int i = 1; i <= 3; ++i) {
+            if(i == 1) {
+                clase = horario.ocho;
+                hora = 8;
+            } else if (i == 2) {
+                clase = horario.diez;
+                hora = 10;
+            } else {
+                clase = horario.doce;
+                hora = 12;
+            }
+            if(clase != -1) {
+                say_clase(clase, hora);
+                vc.play(SND_a);
+                say_time(hora, 0);
+                delay(500);
+            }
+        }
+    }
+}
+
+void Jarvis::say_clase(int clase, int hora) {
+    if(clase%2 != 0) {
+        vc.play(SND_laboratorio);
+    } else {
+        vc.play(SND_teoria);
+    }
+    clase = clase/double(2) + 0.5;
+    vc.play(SND_clases_BD+clase-1);
+}
+
+void Jarvis::sec_apagar_todo() {
+    ir.level_0();
+    delay(500);
+    ir.light_off();
+    inter.off();
 }

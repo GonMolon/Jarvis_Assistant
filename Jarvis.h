@@ -32,11 +32,14 @@ class Jarvis {
     void sec_despertador(int hora, int min);
     void sec_aparecer();
     void sec_desaparecer();
+    void sec_apagar_todo();
     void sec_weather();
-    void sec_musica(int volumen);
+    void sec_musica();
     void sec_menu_musica();
     void sec_chiste();
     void sec_light_on();
+    void sec_horario();
+    void say_clase(int clase, int hora);
     void check_ir();
   public:
     Jarvis();

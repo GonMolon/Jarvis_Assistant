@@ -1,17 +1,18 @@
 #ifndef TIMEDATE_H
 #define TIMEDATE_H
 
-struct TimeCache {
-    int hour;
-    int min;
-    int day;
-    int month;
-    int year;
-    int week_day;
-    unsigned long seconds = -1;
-};
 
 class TimeDate {
+private:
+    struct TimeCache {
+        int hour;
+        int min;
+        int day;
+        int month;
+        int year;
+        int week_day;
+        unsigned long seconds = -1;
+    };
     static const int TIMEZONE = 2;
     unsigned long seconds;
     TimeCache cache;

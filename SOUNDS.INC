@@ -6,9 +6,9 @@
 
 ; external declarations of addresses of sounds for direct access:
 
-    .EXTRN (const) SX_adios
-    .EXTRN (const) SX_alarma_off
-    .EXTRN (const) SX_alarma_on
+    .EXTRN (const) SX_a
+    .EXTRN (const) SX_alarma_activada
+    .EXTRN (const) SX_alarma_cancelada
     .EXTRN (const) SX_alegro
     .EXTRN (const) SX_buenas_noches
     .EXTRN (const) SX_buenos_dias
@@ -17,6 +17,12 @@
     .EXTRN (const) SX_chiste_3
     .EXTRN (const) SX_chiste_4
     .EXTRN (const) SX_chiste_oir
+    .EXTRN (const) SX_clases
+    .EXTRN (const) SX_clases_BD
+    .EXTRN (const) SX_clases_CI
+    .EXTRN (const) SX_clases_EDA
+    .EXTRN (const) SX_clases_PE
+    .EXTRN (const) SX_clases_SO
     .EXTRN (const) SX_cual
     .EXTRN (const) SX_despertador
     .EXTRN (const) SX_dia_1_lunes
@@ -26,9 +32,11 @@
     .EXTRN (const) SX_dia_5_viernes
     .EXTRN (const) SX_dia_6_sabado
     .EXTRN (const) SX_dia_7_domingo
+    .EXTRN (const) SX_dias
     .EXTRN (const) SX_dormir_musica
     .EXTRN (const) SX_error_internet
     .EXTRN (const) SX_escuchar_musica
+    .EXTRN (const) SX_faltan
     .EXTRN (const) SX_grados
     .EXTRN (const) SX_hora_1
     .EXTRN (const) SX_hora_2
@@ -42,9 +50,11 @@
     .EXTRN (const) SX_hora_10
     .EXTRN (const) SX_hora_11
     .EXTRN (const) SX_hora_12
+    .EXTRN (const) SX_hoy_es
     .EXTRN (const) SX_humedad
     .EXTRN (const) SX_ido_dia
     .EXTRN (const) SX_inicio
+    .EXTRN (const) SX_laboratorio
     .EXTRN (const) SX_manana
     .EXTRN (const) SX_mes_1_enero
     .EXTRN (const) SX_mes_2_febrero
@@ -71,6 +81,8 @@
     .EXTRN (const) SX_min_50
     .EXTRN (const) SX_min_55
     .EXTRN (const) SX_no
+    .EXTRN (const) SX_no_clase
+    .EXTRN (const) SX_no_entendido
     .EXTRN (const) SX_num_0
     .EXTRN (const) SX_num_1
     .EXTRN (const) SX_num_2
@@ -120,18 +132,19 @@
     .EXTRN (const) SX_pase_buen_dia
     .EXTRN (const) SX_presentate
     .EXTRN (const) SX_si
+    .EXTRN (const) SX_son
     .EXTRN (const) SX_tarde
     .EXTRN (const) SX_temperatura
+    .EXTRN (const) SX_teoria
     .EXTRN (const) SX_vaya
     .EXTRN (const) SX_ventilador
-    .EXTRN (const) SX_no_entendido
 
 
 ; equates defining sounds as entries in the sound table:
 
-SND_adios               .EQU 1
-SND_alarma_off          .EQU 2
-SND_alarma_on           .EQU 3
+SND_a                   .EQU 1
+SND_alarma_activada     .EQU 2
+SND_alarma_cancelada    .EQU 3
 SND_alegro              .EQU 4
 SND_buenas_noches       .EQU 5
 SND_buenos_dias         .EQU 6
@@ -140,112 +153,125 @@ SND_chiste_2            .EQU 8
 SND_chiste_3            .EQU 9
 SND_chiste_4            .EQU 10
 SND_chiste_oir          .EQU 11
-SND_cual                .EQU 12
-SND_despertador         .EQU 13
-SND_dia_1_lunes         .EQU 14
-SND_dia_2_martes        .EQU 15
-SND_dia_3_miercoles     .EQU 16
-SND_dia_4_jueves        .EQU 17
-SND_dia_5_viernes       .EQU 18
-SND_dia_6_sabado        .EQU 19
-SND_dia_7_domingo       .EQU 20
-SND_dormir_musica       .EQU 21
-SND_error_internet      .EQU 22
-SND_escuchar_musica     .EQU 23
-SND_grados              .EQU 24
-SND_hora_1              .EQU 25
-SND_hora_2              .EQU 26
-SND_hora_3              .EQU 27
-SND_hora_4              .EQU 28
-SND_hora_5              .EQU 29
-SND_hora_6              .EQU 30
-SND_hora_7              .EQU 31
-SND_hora_8              .EQU 32
-SND_hora_9              .EQU 33
-SND_hora_10             .EQU 34
-SND_hora_11             .EQU 35
-SND_hora_12             .EQU 36
-SND_humedad             .EQU 37
-SND_ido_dia             .EQU 38
-SND_inicio              .EQU 39
-SND_manana              .EQU 40
-SND_mes_1_enero         .EQU 41
-SND_mes_2_febrero       .EQU 42
-SND_mes_3_marzo         .EQU 43
-SND_mes_4_abril         .EQU 44
-SND_mes_5_mayo          .EQU 45
-SND_mes_6_junio         .EQU 46
-SND_mes_7julio          .EQU 47
-SND_mes_8_agosto        .EQU 48
-SND_mes_9_septiembre    .EQU 49
-SND_mes_11_noviembre    .EQU 50
-SND_mes_11_octubre      .EQU 51
-SND_mes_12_diciembre    .EQU 52
-SND_min_0               .EQU 53
-SND_min_5               .EQU 54
-SND_min_10              .EQU 55
-SND_min_15              .EQU 56
-SND_min_20              .EQU 57
-SND_min_25              .EQU 58
-SND_min_30              .EQU 59
-SND_min_35              .EQU 60
-SND_min_40              .EQU 61
-SND_min_45              .EQU 62
-SND_min_50              .EQU 63
-SND_min_55              .EQU 64
-SND_no                  .EQU 65
-SND_num_0               .EQU 66
-SND_num_1               .EQU 67
-SND_num_2               .EQU 68
-SND_num_3               .EQU 69
-SND_num_4               .EQU 70
-SND_num_5               .EQU 71
-SND_num_6               .EQU 72
-SND_num_7               .EQU 73
-SND_num_8               .EQU 74
-SND_num_9               .EQU 75
-SND_num_10              .EQU 76
-SND_num_11              .EQU 77
-SND_num_12              .EQU 78
-SND_num_13              .EQU 79
-SND_num_14              .EQU 80
-SND_num_15              .EQU 81
-SND_num_16              .EQU 82
-SND_num_17              .EQU 83
-SND_num_18              .EQU 84
-SND_num_19              .EQU 85
-SND_num_20              .EQU 86
-SND_num_21              .EQU 87
-SND_num_22              .EQU 88
-SND_num_23              .EQU 89
-SND_num_24              .EQU 90
-SND_num_25              .EQU 91
-SND_num_26              .EQU 92
-SND_num_27              .EQU 93
-SND_num_28              .EQU 94
-SND_num_29              .EQU 95
-SND_num_30              .EQU 96
-SND_num_31              .EQU 97
-SND_num_32              .EQU 98
-SND_num_33              .EQU 99
-SND_num_34              .EQU 100
-SND_num_35              .EQU 101
-SND_num_36              .EQU 102
-SND_num_37              .EQU 103
-SND_num_38              .EQU 104
-SND_num_39              .EQU 105
-SND_num_40              .EQU 106
-SND_num_50              .EQU 107
-SND_num_60              .EQU 108
-SND_num_70              .EQU 109
-SND_num_80              .EQU 110
-SND_num_90              .EQU 111
-SND_pase_buen_dia       .EQU 112
-SND_presentate          .EQU 113
-SND_si                  .EQU 114
-SND_tarde               .EQU 115
-SND_temperatura         .EQU 116
-SND_vaya                .EQU 117
-SND_ventilador          .EQU 118
-SND_no_entendido        .EQU 119
+SND_clases              .EQU 12
+SND_clases_BD           .EQU 13
+SND_clases_CI           .EQU 14
+SND_clases_EDA          .EQU 15
+SND_clases_PE           .EQU 16
+SND_clases_SO           .EQU 17
+SND_cual                .EQU 18
+SND_despertador         .EQU 19
+SND_dia_1_lunes         .EQU 20
+SND_dia_2_martes        .EQU 21
+SND_dia_3_miercoles     .EQU 22
+SND_dia_4_jueves        .EQU 23
+SND_dia_5_viernes       .EQU 24
+SND_dia_6_sabado        .EQU 25
+SND_dia_7_domingo       .EQU 26
+SND_dias                .EQU 27
+SND_dormir_musica       .EQU 28
+SND_error_internet      .EQU 29
+SND_escuchar_musica     .EQU 30
+SND_faltan              .EQU 31
+SND_grados              .EQU 32
+SND_hora_1              .EQU 33
+SND_hora_2              .EQU 34
+SND_hora_3              .EQU 35
+SND_hora_4              .EQU 36
+SND_hora_5              .EQU 37
+SND_hora_6              .EQU 38
+SND_hora_7              .EQU 39
+SND_hora_8              .EQU 40
+SND_hora_9              .EQU 41
+SND_hora_10             .EQU 42
+SND_hora_11             .EQU 43
+SND_hora_12             .EQU 44
+SND_hoy_es              .EQU 45
+SND_humedad             .EQU 46
+SND_ido_dia             .EQU 47
+SND_inicio              .EQU 48
+SND_laboratorio         .EQU 49
+SND_manana              .EQU 50
+SND_mes_1_enero         .EQU 51
+SND_mes_2_febrero       .EQU 52
+SND_mes_3_marzo         .EQU 53
+SND_mes_4_abril         .EQU 54
+SND_mes_5_mayo          .EQU 55
+SND_mes_6_junio         .EQU 56
+SND_mes_7julio          .EQU 57
+SND_mes_8_agosto        .EQU 58
+SND_mes_9_septiembre    .EQU 59
+SND_mes_11_noviembre    .EQU 60
+SND_mes_11_octubre      .EQU 61
+SND_mes_12_diciembre    .EQU 62
+SND_min_0               .EQU 63
+SND_min_5               .EQU 64
+SND_min_10              .EQU 65
+SND_min_15              .EQU 66
+SND_min_20              .EQU 67
+SND_min_25              .EQU 68
+SND_min_30              .EQU 69
+SND_min_35              .EQU 70
+SND_min_40              .EQU 71
+SND_min_45              .EQU 72
+SND_min_50              .EQU 73
+SND_min_55              .EQU 74
+SND_no                  .EQU 75
+SND_no_clase            .EQU 76
+SND_no_entendido        .EQU 77
+SND_num_0               .EQU 78
+SND_num_1               .EQU 79
+SND_num_2               .EQU 80
+SND_num_3               .EQU 81
+SND_num_4               .EQU 82
+SND_num_5               .EQU 83
+SND_num_6               .EQU 84
+SND_num_7               .EQU 85
+SND_num_8               .EQU 86
+SND_num_9               .EQU 87
+SND_num_10              .EQU 88
+SND_num_11              .EQU 89
+SND_num_12              .EQU 90
+SND_num_13              .EQU 91
+SND_num_14              .EQU 92
+SND_num_15              .EQU 93
+SND_num_16              .EQU 94
+SND_num_17              .EQU 95
+SND_num_18              .EQU 96
+SND_num_19              .EQU 97
+SND_num_20              .EQU 98
+SND_num_21              .EQU 99
+SND_num_22              .EQU 100
+SND_num_23              .EQU 101
+SND_num_24              .EQU 102
+SND_num_25              .EQU 103
+SND_num_26              .EQU 104
+SND_num_27              .EQU 105
+SND_num_28              .EQU 106
+SND_num_29              .EQU 107
+SND_num_30              .EQU 108
+SND_num_31              .EQU 109
+SND_num_32              .EQU 110
+SND_num_33              .EQU 111
+SND_num_34              .EQU 112
+SND_num_35              .EQU 113
+SND_num_36              .EQU 114
+SND_num_37              .EQU 115
+SND_num_38              .EQU 116
+SND_num_39              .EQU 117
+SND_num_40              .EQU 118
+SND_num_50              .EQU 119
+SND_num_60              .EQU 120
+SND_num_70              .EQU 121
+SND_num_80              .EQU 122
+SND_num_90              .EQU 123
+SND_pase_buen_dia       .EQU 124
+SND_presentate          .EQU 125
+SND_si                  .EQU 126
+SND_son                 .EQU 127
+SND_tarde               .EQU 128
+SND_temperatura         .EQU 129
+SND_teoria              .EQU 130
+SND_vaya                .EQU 131
+SND_ventilador          .EQU 132
 
