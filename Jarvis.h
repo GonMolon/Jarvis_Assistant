@@ -24,7 +24,6 @@ class Jarvis {
     void sec_resumen_dia();
     void sec_hora();
     void say_time(int hour, int min);
-    void sec_dia();
     bool check_time();
     void sec_temperatura();
     void sec_humedad();

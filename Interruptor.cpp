@@ -2,14 +2,14 @@
 #include "Arduino.h"
 
 Interruptor::Interruptor() {
-    /*servo.attach(PIN_SERVO);
+    servo.attach(PIN_SERVO);
     servo.write(POS1);
     delay(WAIT_TIME);
-    servo.detach();*/
+    servo.detach();
 }
 
 void Interruptor::changeLight() {
-    /*servo.attach(PIN_SERVO);
+    servo.attach(PIN_SERVO);
     int pos = servo.read();
     if (pos == POS1) {
         pos = POS2;
@@ -18,7 +18,7 @@ void Interruptor::changeLight() {
     }
     servo.write(pos);
     delay(WAIT_TIME);
-    servo.detach();*/
+    servo.detach();
 }
 
 void Interruptor::on() {

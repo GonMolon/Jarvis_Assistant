@@ -6,7 +6,6 @@ Jarvis::Jarvis() {
     int light1 = mov.get_light();
     inter.changeLight();
     int light2 = mov.get_light();
-    Serial.println(light2);
     if(light1 > light2) {
         inter.changeLight();
     }
@@ -17,7 +16,6 @@ Jarvis::Jarvis() {
 void Jarvis::refresh() {
     Serial.println(vc.is_sleeping());
     if(!vc.is_sleeping()) {
-        Serial.println("hellou");
         if(mov.refresh(timer2)) {
             timer1.reset();
             if(mov.is_moving()) {
@@ -68,8 +66,7 @@ void Jarvis::sec_inicio() {
         ir.level_0();
     } else if(id == 9) { //Hora
         sec_hora();
-    } else if(id == 10) { //Dia
-        sec_dia();
+    } else if(id == 10) { //Dia esto noooo
     } else if(id == 11) { //Weather
         sec_weather();
     } else if(id == 12) { //Poner musica
@@ -79,7 +76,7 @@ void Jarvis::sec_inicio() {
     } else if(id == 14) { //Temperatura
         sec_temperatura();
     } else if(id == 15) { //Marcho
-        sec_dormir();
+        sec_despertador(6, 30);
     }
 }
 
@@ -119,25 +116,26 @@ void Jarvis::sec_chiste() {
 
 void Jarvis::sec_resumen_dia() {
     sec_hora();
-    sec_dia();
     sec_temperatura();
     sec_humedad();
     sec_weather();
 }
 
 bool Jarvis::check_time() {
-    if(!time.is_set()) {
-        if(!time.refresh()) {
-            vc.play(SND_error_internet);
-            return false;
-        }
+    if(!time.refresh()) {
+        vc.play(SND_error_internet);
+        return false;
+    } else {
+        return true;
     }
-    return true;
 }
 
 void Jarvis::sec_hora() {
     if(check_time()) {
         say_time(time.getHour(), time.getMin());
+        vc.play(SND_dia_1_lunes + time.getDayOfWeek()-1);
+        vc.play(SND_num_1 + time.getDay() - 1);
+        vc.play(SND_mes_1_enero + time.getMonth() - 1);
     } else {
         delay(1000);
     }
@@ -160,15 +158,6 @@ void Jarvis::say_time(int hour, int min) {
         vc.play(SND_tarde);
     }
 }
-
-void Jarvis::sec_dia() {
-    if(check_time()) {
-        vc.play(SND_dia_1_lunes + time.getDayOfWeek() - 1);
-        vc.play(SND_num_1 + time.getDay() - 1);
-        vc.play(SND_mes_1_enero + time.getMonth() - 1);
-    }
-}
-
 
 void Jarvis::sec_temperatura() {
     int temperatura = term.get_temperature();
@@ -263,23 +252,24 @@ void Jarvis::sec_despertar() {
 }
 
 void Jarvis::sec_despertador(int hora, int min) {
-    unsigned long time_seconds = time.get_time_in_seconds();
-    time.set_time(hora, min, time.getDay(), time.getMonth(), time.getYear());
-    if(time.get_time_in_seconds() < time_seconds) {
-        time.set_time_seconds(time.get_time_in_seconds()+(unsigned long)24*60*60);
-    }
-    sec_resumen_dia();
-    unsigned int duration = time.get_time_in_seconds()-time_seconds;
-    Timer alarm(duration);
-    time.set_time_seconds(time_seconds);
-    while(!alarm.is_finished()) {
-        check_ir();
-        Serial.println(alarm.get_remaining());
-    }
-    sec_musica(1);
-    for(int i = 0; i < 4; ++i) {
-        delay(1000);
-        ir.volume_up();
+    if(!check_time()) {
+        vc.play(SND_alarma_off);
+    } else {
+        TimeDate alarmTime(hora, min, time.getDay(), time.getMonth(), time.getYear());
+        if(alarmTime < time) {
+            alarmTime.set_time_seconds(alarmTime.get_time_in_seconds()+(unsigned long)24*3600);
+        }
+        unsigned int duration = alarmTime.get_time_in_seconds()-time.get_time_in_seconds();
+        Serial.println(duration);
+        Timer alarm(duration);
+        while(!alarm.is_finished()) {
+            check_ir();
+        }
+        sec_musica(1);
+        for(int i = 0; i < 4; ++i) {
+            delay(1000);
+            ir.volume_up();
+        }
     }
     sec_despertar();
 }

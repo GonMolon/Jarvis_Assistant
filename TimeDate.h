@@ -1,16 +1,26 @@
 #ifndef TIMEDATE_H
 #define TIMEDATE_H
 
-#include <Time.h>
-#include "HttpRequest.h"
+struct TimeCache {
+    int hour;
+    int min;
+    int day;
+    int month;
+    int year;
+    int week_day;
+    unsigned long seconds = -1;
+};
 
 class TimeDate {
     static const int TIMEZONE = 2;
-    unsigned long milliseconds = -1;
-    bool set = false;
+    unsigned long seconds;
+    TimeCache cache;
+    void updateCache();
+    static bool isLeapYear(int year);
+    static int getDaysMonth(int month, int year);
 public:
     TimeDate();
-    bool is_set();
+    TimeDate(int hour, int min, int day, int month, int year);
     bool refresh();
     int getHour();
     int getMin();
@@ -18,10 +28,11 @@ public:
     int getMonth();
     int getYear();
     int getDayOfWeek();
+    bool is_AM();
+    bool operator<(const TimeDate &b) const;
     unsigned long get_time_in_seconds();
     void set_time_seconds(unsigned long seconds);
     void set_time(int hour, int min, int day, int month, int year);
-    bool is_AM();
 };
 
 #endif // TIMEDATE_H
