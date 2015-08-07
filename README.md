@@ -21,7 +21,7 @@ Borramos en SOUNDS.h todo menos los define.
 -------------------------------------------------------------------------------
 Para grabar nuevos comandos:
 -------------------------------------------------------------------------------
-Poner jumper en "Pc". Abrir easyvr commander y conectar a arduino. La shield tiene que estar 
+Poner jumper en "Sw". Abrir easyvr commander y conectar a arduino. La shield tiene que estar 
 conectada directamente a arduino.
 
 

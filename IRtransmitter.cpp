@@ -62,6 +62,22 @@ void IRtransmitter::volume_down() {
     sendNEC(SPEAKERS_LOWER);
 }
 
+void IRtransmitter::up() {
+    sendNEC(SPEAKERS_UP);
+}
+
+void IRtransmitter::down() {
+    sendNEC(SPEAKERS_DOWN);
+}
+
+void IRtransmitter::menu() {
+    sendNEC(SPEAKERS_MENU);
+}
+
+void IRtransmitter::select() {
+    sendNEC(SPEAKERS_SELECT);
+}
+
 void IRtransmitter::playlist(int id) {
     for(int i = 0; i < 6; i++) {
         sendNEC(SPEAKERS_MENU);
@@ -130,4 +146,12 @@ void IRtransmitter::sendRAW(unsigned int (&ircode)[99]) {
         delay(10);
     }
     irrecv.enableIRIn();
+}
+
+bool IRtransmitter::isControllingSpeakers() const {
+    return speakersControl;
+}
+
+void IRtransmitter::setControllingSpeakers(bool controlling) {
+    speakersControl = controlling;
 }

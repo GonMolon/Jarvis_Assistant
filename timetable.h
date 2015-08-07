@@ -1,8 +1,6 @@
 #ifndef TIMETABLE
 #define TIMETABLE
 
-#include <arduino.h>
-
 class Timetable {
 public:
     struct HorarioDia {
@@ -10,7 +8,6 @@ public:
         int diez;
         int doce;
     };
-
     static const int BD_L = 1;
     static const int BD_T = 2;
     static const int CI_L = 3;
@@ -26,4 +23,3 @@ public:
 };
 
 #endif // TIMETABLE
-

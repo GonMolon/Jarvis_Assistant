@@ -42,9 +42,9 @@ IncludeSync
 [EndMisc]
 [Sound]
 Handle
-1
+244
 Version
-2
+1
 SrcName
 ".\audio\a.wav"
 SrcSampleRate
@@ -64,7 +64,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\1_2.mca"
+".\sounds_cmp\244_1.mca"
 CmpSeconds
 .352
 CmpSize
@@ -78,7 +78,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'a'_1_2.wav"
+".\sounds_sim\'a'_244_1.wav"
 SyncName
 ""
 LogName
@@ -100,9 +100,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-2
+245
 Version
-2
+1
 SrcName
 ".\audio\alarma_activada.wav"
 SrcSampleRate
@@ -122,7 +122,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\2_2.mca"
+".\sounds_cmp\245_1.mca"
 CmpSeconds
 .992
 CmpSize
@@ -136,7 +136,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'alarma_activada'_2_2.wav"
+".\sounds_sim\'alarma_activada'_245_1.wav"
 SyncName
 ""
 LogName
@@ -158,9 +158,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-3
+246
 Version
-2
+1
 SrcName
 ".\audio\alarma_cancelada.wav"
 SrcSampleRate
@@ -180,7 +180,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\3_2.mca"
+".\sounds_cmp\246_1.mca"
 CmpSeconds
 1.152
 CmpSize
@@ -194,7 +194,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'alarma_cancelada'_3_2.wav"
+".\sounds_sim\'alarma_cancelada'_246_1.wav"
 SyncName
 ""
 LogName
@@ -216,9 +216,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-4
+247
 Version
-2
+1
 SrcName
 ".\audio\alegro.wav"
 SrcSampleRate
@@ -238,7 +238,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\4_2.mca"
+".\sounds_cmp\247_1.mca"
 CmpSeconds
 .608
 CmpSize
@@ -252,7 +252,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'alegro'_4_2.wav"
+".\sounds_sim\'alegro'_247_1.wav"
 SyncName
 ""
 LogName
@@ -274,9 +274,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-5
+248
 Version
-2
+1
 SrcName
 ".\audio\buenas_noches.wav"
 SrcSampleRate
@@ -296,7 +296,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\5_2.mca"
+".\sounds_cmp\248_1.mca"
 CmpSeconds
 1.888
 CmpSize
@@ -310,7 +310,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'buenas_noches'_5_2.wav"
+".\sounds_sim\'buenas_noches'_248_1.wav"
 SyncName
 ""
 LogName
@@ -332,9 +332,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-6
+249
 Version
-2
+1
 SrcName
 ".\audio\buenos_dias.wav"
 SrcSampleRate
@@ -354,7 +354,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\6_2.mca"
+".\sounds_cmp\249_1.mca"
 CmpSeconds
 1.536
 CmpSize
@@ -368,7 +368,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'buenos_dias'_6_2.wav"
+".\sounds_sim\'buenos_dias'_249_1.wav"
 SyncName
 ""
 LogName
@@ -390,9 +390,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-7
+250
 Version
-2
+1
 SrcName
 ".\audio\chiste_1.wav"
 SrcSampleRate
@@ -412,7 +412,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\7_2.mca"
+".\sounds_cmp\250_1.mca"
 CmpSeconds
 4.448
 CmpSize
@@ -426,7 +426,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'chiste_1'_7_2.wav"
+".\sounds_sim\'chiste_1'_250_1.wav"
 SyncName
 ""
 LogName
@@ -448,9 +448,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-8
+251
 Version
-2
+1
 SrcName
 ".\audio\chiste_2.wav"
 SrcSampleRate
@@ -470,7 +470,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\8_2.mca"
+".\sounds_cmp\251_1.mca"
 CmpSeconds
 1.856
 CmpSize
@@ -484,7 +484,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'chiste_2'_8_2.wav"
+".\sounds_sim\'chiste_2'_251_1.wav"
 SyncName
 ""
 LogName
@@ -506,9 +506,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-9
+252
 Version
-2
+1
 SrcName
 ".\audio\chiste_3.wav"
 SrcSampleRate
@@ -528,7 +528,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\9_2.mca"
+".\sounds_cmp\252_1.mca"
 CmpSeconds
 3.712
 CmpSize
@@ -542,7 +542,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'chiste_3'_9_2.wav"
+".\sounds_sim\'chiste_3'_252_1.wav"
 SyncName
 ""
 LogName
@@ -564,9 +564,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-10
+253
 Version
-2
+1
 SrcName
 ".\audio\chiste_4.wav"
 SrcSampleRate
@@ -586,7 +586,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\10_2.mca"
+".\sounds_cmp\253_1.mca"
 CmpSeconds
 1.76
 CmpSize
@@ -600,7 +600,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'chiste_4'_10_2.wav"
+".\sounds_sim\'chiste_4'_253_1.wav"
 SyncName
 ""
 LogName
@@ -622,9 +622,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-11
+254
 Version
-2
+1
 SrcName
 ".\audio\chiste_oir.wav"
 SrcSampleRate
@@ -644,7 +644,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\11_2.mca"
+".\sounds_cmp\254_1.mca"
 CmpSeconds
 1.152
 CmpSize
@@ -658,7 +658,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'chiste_oir'_11_2.wav"
+".\sounds_sim\'chiste_oir'_254_1.wav"
 SyncName
 ""
 LogName
@@ -680,9 +680,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-12
+255
 Version
-2
+1
 SrcName
 ".\audio\clases.wav"
 SrcSampleRate
@@ -702,7 +702,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\12_2.mca"
+".\sounds_cmp\255_1.mca"
 CmpSeconds
 1.536
 CmpSize
@@ -716,7 +716,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'clases'_12_2.wav"
+".\sounds_sim\'clases'_255_1.wav"
 SyncName
 ""
 LogName
@@ -738,9 +738,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-13
+256
 Version
-2
+1
 SrcName
 ".\audio\clases_BD.wav"
 SrcSampleRate
@@ -760,7 +760,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\13_2.mca"
+".\sounds_cmp\256_1.mca"
 CmpSeconds
 .928
 CmpSize
@@ -774,7 +774,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'clases_BD'_13_2.wav"
+".\sounds_sim\'clases_BD'_256_1.wav"
 SyncName
 ""
 LogName
@@ -796,9 +796,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-14
+257
 Version
-2
+1
 SrcName
 ".\audio\clases_CI.wav"
 SrcSampleRate
@@ -818,7 +818,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\14_2.mca"
+".\sounds_cmp\257_1.mca"
 CmpSeconds
 1.664
 CmpSize
@@ -832,7 +832,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'clases_CI'_14_2.wav"
+".\sounds_sim\'clases_CI'_257_1.wav"
 SyncName
 ""
 LogName
@@ -854,9 +854,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-15
+258
 Version
-2
+1
 SrcName
 ".\audio\clases_EDA.wav"
 SrcSampleRate
@@ -876,7 +876,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\15_2.mca"
+".\sounds_cmp\258_1.mca"
 CmpSeconds
 2.016
 CmpSize
@@ -890,7 +890,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'clases_EDA'_15_2.wav"
+".\sounds_sim\'clases_EDA'_258_1.wav"
 SyncName
 ""
 LogName
@@ -912,9 +912,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-16
+259
 Version
-2
+1
 SrcName
 ".\audio\clases_PE.wav"
 SrcSampleRate
@@ -934,7 +934,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\16_2.mca"
+".\sounds_cmp\259_1.mca"
 CmpSeconds
 1.504
 CmpSize
@@ -948,7 +948,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'clases_PE'_16_2.wav"
+".\sounds_sim\'clases_PE'_259_1.wav"
 SyncName
 ""
 LogName
@@ -970,9 +970,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-17
+260
 Version
-2
+1
 SrcName
 ".\audio\clases_SO.wav"
 SrcSampleRate
@@ -992,7 +992,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\17_2.mca"
+".\sounds_cmp\260_1.mca"
 CmpSeconds
 1.344
 CmpSize
@@ -1006,7 +1006,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'clases_SO'_17_2.wav"
+".\sounds_sim\'clases_SO'_260_1.wav"
 SyncName
 ""
 LogName
@@ -1028,9 +1028,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-18
+261
 Version
-2
+1
 SrcName
 ".\audio\cual.wav"
 SrcSampleRate
@@ -1050,7 +1050,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\18_2.mca"
+".\sounds_cmp\261_1.mca"
 CmpSeconds
 .48
 CmpSize
@@ -1064,7 +1064,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'cual'_18_2.wav"
+".\sounds_sim\'cual'_261_1.wav"
 SyncName
 ""
 LogName
@@ -1086,9 +1086,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-19
+262
 Version
-2
+1
 SrcName
 ".\audio\despertador.wav"
 SrcSampleRate
@@ -1108,7 +1108,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\19_2.mca"
+".\sounds_cmp\262_1.mca"
 CmpSeconds
 1.76
 CmpSize
@@ -1122,7 +1122,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'despertador'_19_2.wav"
+".\sounds_sim\'despertador'_262_1.wav"
 SyncName
 ""
 LogName
@@ -1144,9 +1144,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-20
+263
 Version
-2
+1
 SrcName
 ".\audio\dia_1_lunes.wav"
 SrcSampleRate
@@ -1166,7 +1166,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\20_2.mca"
+".\sounds_cmp\263_1.mca"
 CmpSeconds
 .704
 CmpSize
@@ -1180,7 +1180,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'dia_1_lunes'_20_2.wav"
+".\sounds_sim\'dia_1_lunes'_263_1.wav"
 SyncName
 ""
 LogName
@@ -1202,9 +1202,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-21
+264
 Version
-2
+1
 SrcName
 ".\audio\dia_2_martes.wav"
 SrcSampleRate
@@ -1224,7 +1224,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\21_2.mca"
+".\sounds_cmp\264_1.mca"
 CmpSeconds
 .768
 CmpSize
@@ -1238,7 +1238,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'dia_2_martes'_21_2.wav"
+".\sounds_sim\'dia_2_martes'_264_1.wav"
 SyncName
 ""
 LogName
@@ -1260,9 +1260,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-22
+265
 Version
-2
+1
 SrcName
 ".\audio\dia_3_miercoles.wav"
 SrcSampleRate
@@ -1282,7 +1282,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\22_2.mca"
+".\sounds_cmp\265_1.mca"
 CmpSeconds
 .832
 CmpSize
@@ -1296,7 +1296,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'dia_3_miercoles'_22_2.wav"
+".\sounds_sim\'dia_3_miercoles'_265_1.wav"
 SyncName
 ""
 LogName
@@ -1318,9 +1318,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-23
+266
 Version
-2
+1
 SrcName
 ".\audio\dia_4_jueves.wav"
 SrcSampleRate
@@ -1340,7 +1340,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\23_2.mca"
+".\sounds_cmp\266_1.mca"
 CmpSeconds
 .64
 CmpSize
@@ -1354,7 +1354,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'dia_4_jueves'_23_2.wav"
+".\sounds_sim\'dia_4_jueves'_266_1.wav"
 SyncName
 ""
 LogName
@@ -1376,9 +1376,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-24
+267
 Version
-2
+1
 SrcName
 ".\audio\dia_5_viernes.wav"
 SrcSampleRate
@@ -1398,7 +1398,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\24_2.mca"
+".\sounds_cmp\267_1.mca"
 CmpSeconds
 .736
 CmpSize
@@ -1412,7 +1412,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'dia_5_viernes'_24_2.wav"
+".\sounds_sim\'dia_5_viernes'_267_1.wav"
 SyncName
 ""
 LogName
@@ -1434,9 +1434,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-25
+268
 Version
-2
+1
 SrcName
 ".\audio\dia_6_sabado.wav"
 SrcSampleRate
@@ -1456,7 +1456,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\25_2.mca"
+".\sounds_cmp\268_1.mca"
 CmpSeconds
 .768
 CmpSize
@@ -1470,7 +1470,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'dia_6_sabado'_25_2.wav"
+".\sounds_sim\'dia_6_sabado'_268_1.wav"
 SyncName
 ""
 LogName
@@ -1492,9 +1492,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-26
+269
 Version
-2
+1
 SrcName
 ".\audio\dia_7_domingo.wav"
 SrcSampleRate
@@ -1514,7 +1514,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\26_2.mca"
+".\sounds_cmp\269_1.mca"
 CmpSeconds
 .512
 CmpSize
@@ -1528,7 +1528,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'dia_7_domingo'_26_2.wav"
+".\sounds_sim\'dia_7_domingo'_269_1.wav"
 SyncName
 ""
 LogName
@@ -1550,9 +1550,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-27
+270
 Version
-2
+1
 SrcName
 ".\audio\dias.wav"
 SrcSampleRate
@@ -1572,7 +1572,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\27_2.mca"
+".\sounds_cmp\270_1.mca"
 CmpSeconds
 2.496
 CmpSize
@@ -1586,7 +1586,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'dias'_27_2.wav"
+".\sounds_sim\'dias'_270_1.wav"
 SyncName
 ""
 LogName
@@ -1608,9 +1608,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-28
+271
 Version
-2
+1
 SrcName
 ".\audio\dormir_musica.wav"
 SrcSampleRate
@@ -1630,7 +1630,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\28_2.mca"
+".\sounds_cmp\271_1.mca"
 CmpSeconds
 1.728
 CmpSize
@@ -1644,7 +1644,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'dormir_musica'_28_2.wav"
+".\sounds_sim\'dormir_musica'_271_1.wav"
 SyncName
 ""
 LogName
@@ -1666,9 +1666,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-29
+272
 Version
-2
+1
 SrcName
 ".\audio\error_internet.wav"
 SrcSampleRate
@@ -1688,7 +1688,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\29_2.mca"
+".\sounds_cmp\272_1.mca"
 CmpSeconds
 1.792
 CmpSize
@@ -1702,7 +1702,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'error_internet'_29_2.wav"
+".\sounds_sim\'error_internet'_272_1.wav"
 SyncName
 ""
 LogName
@@ -1724,9 +1724,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-30
+273
 Version
-2
+1
 SrcName
 ".\audio\escuchar_musica.wav"
 SrcSampleRate
@@ -1746,7 +1746,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\30_2.mca"
+".\sounds_cmp\273_1.mca"
 CmpSeconds
 1.28
 CmpSize
@@ -1760,7 +1760,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'escuchar_musica'_30_2.wav"
+".\sounds_sim\'escuchar_musica'_273_1.wav"
 SyncName
 ""
 LogName
@@ -1782,9 +1782,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-31
+274
 Version
-2
+1
 SrcName
 ".\audio\faltan.wav"
 SrcSampleRate
@@ -1804,7 +1804,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\31_2.mca"
+".\sounds_cmp\274_1.mca"
 CmpSeconds
 .576
 CmpSize
@@ -1818,7 +1818,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'faltan'_31_2.wav"
+".\sounds_sim\'faltan'_274_1.wav"
 SyncName
 ""
 LogName
@@ -1840,9 +1840,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-32
+275
 Version
-2
+1
 SrcName
 ".\audio\grados.wav"
 SrcSampleRate
@@ -1862,7 +1862,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\32_2.mca"
+".\sounds_cmp\275_1.mca"
 CmpSeconds
 .672
 CmpSize
@@ -1876,7 +1876,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'grados'_32_2.wav"
+".\sounds_sim\'grados'_275_1.wav"
 SyncName
 ""
 LogName
@@ -1898,9 +1898,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-33
+276
 Version
-2
+1
 SrcName
 ".\audio\hora_1.wav"
 SrcSampleRate
@@ -1920,7 +1920,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\33_2.mca"
+".\sounds_cmp\276_1.mca"
 CmpSeconds
 .544
 CmpSize
@@ -1934,7 +1934,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'hora_1'_33_2.wav"
+".\sounds_sim\'hora_1'_276_1.wav"
 SyncName
 ""
 LogName
@@ -1956,9 +1956,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-34
+277
 Version
-2
+1
 SrcName
 ".\audio\hora_2.wav"
 SrcSampleRate
@@ -1978,7 +1978,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\34_2.mca"
+".\sounds_cmp\277_1.mca"
 CmpSeconds
 .768
 CmpSize
@@ -1992,7 +1992,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'hora_2'_34_2.wav"
+".\sounds_sim\'hora_2'_277_1.wav"
 SyncName
 ""
 LogName
@@ -2014,9 +2014,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-35
+278
 Version
-2
+1
 SrcName
 ".\audio\hora_3.wav"
 SrcSampleRate
@@ -2036,7 +2036,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\35_2.mca"
+".\sounds_cmp\278_1.mca"
 CmpSeconds
 .864
 CmpSize
@@ -2050,7 +2050,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'hora_3'_35_2.wav"
+".\sounds_sim\'hora_3'_278_1.wav"
 SyncName
 ""
 LogName
@@ -2072,9 +2072,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-36
+279
 Version
-2
+1
 SrcName
 ".\audio\hora_4.wav"
 SrcSampleRate
@@ -2094,7 +2094,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\36_2.mca"
+".\sounds_cmp\279_1.mca"
 CmpSeconds
 .864
 CmpSize
@@ -2108,7 +2108,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'hora_4'_36_2.wav"
+".\sounds_sim\'hora_4'_279_1.wav"
 SyncName
 ""
 LogName
@@ -2130,9 +2130,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-37
+280
 Version
-2
+1
 SrcName
 ".\audio\hora_5.wav"
 SrcSampleRate
@@ -2152,7 +2152,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\37_2.mca"
+".\sounds_cmp\280_1.mca"
 CmpSeconds
 .8
 CmpSize
@@ -2166,7 +2166,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'hora_5'_37_2.wav"
+".\sounds_sim\'hora_5'_280_1.wav"
 SyncName
 ""
 LogName
@@ -2188,9 +2188,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-38
+281
 Version
-2
+1
 SrcName
 ".\audio\hora_6.wav"
 SrcSampleRate
@@ -2210,7 +2210,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\38_2.mca"
+".\sounds_cmp\281_1.mca"
 CmpSeconds
 .864
 CmpSize
@@ -2224,7 +2224,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'hora_6'_38_2.wav"
+".\sounds_sim\'hora_6'_281_1.wav"
 SyncName
 ""
 LogName
@@ -2246,9 +2246,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-39
+282
 Version
-2
+1
 SrcName
 ".\audio\hora_7.wav"
 SrcSampleRate
@@ -2268,7 +2268,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\39_2.mca"
+".\sounds_cmp\282_1.mca"
 CmpSeconds
 .768
 CmpSize
@@ -2282,7 +2282,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'hora_7'_39_2.wav"
+".\sounds_sim\'hora_7'_282_1.wav"
 SyncName
 ""
 LogName
@@ -2304,9 +2304,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-40
+283
 Version
-2
+1
 SrcName
 ".\audio\hora_8.wav"
 SrcSampleRate
@@ -2326,7 +2326,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\40_2.mca"
+".\sounds_cmp\283_1.mca"
 CmpSeconds
 .704
 CmpSize
@@ -2340,7 +2340,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'hora_8'_40_2.wav"
+".\sounds_sim\'hora_8'_283_1.wav"
 SyncName
 ""
 LogName
@@ -2362,9 +2362,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-41
+284
 Version
-2
+1
 SrcName
 ".\audio\hora_9.wav"
 SrcSampleRate
@@ -2384,7 +2384,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\41_2.mca"
+".\sounds_cmp\284_1.mca"
 CmpSeconds
 .736
 CmpSize
@@ -2398,7 +2398,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'hora_9'_41_2.wav"
+".\sounds_sim\'hora_9'_284_1.wav"
 SyncName
 ""
 LogName
@@ -2420,9 +2420,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-42
+285
 Version
-2
+1
 SrcName
 ".\audio\hora_10.wav"
 SrcSampleRate
@@ -2442,7 +2442,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\42_2.mca"
+".\sounds_cmp\285_1.mca"
 CmpSeconds
 .832
 CmpSize
@@ -2456,7 +2456,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'hora_10'_42_2.wav"
+".\sounds_sim\'hora_10'_285_1.wav"
 SyncName
 ""
 LogName
@@ -2478,9 +2478,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-43
+286
 Version
-2
+1
 SrcName
 ".\audio\hora_11.wav"
 SrcSampleRate
@@ -2500,7 +2500,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\43_2.mca"
+".\sounds_cmp\286_1.mca"
 CmpSeconds
 .864
 CmpSize
@@ -2514,7 +2514,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'hora_11'_43_2.wav"
+".\sounds_sim\'hora_11'_286_1.wav"
 SyncName
 ""
 LogName
@@ -2536,9 +2536,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-44
+287
 Version
-2
+1
 SrcName
 ".\audio\hora_12.wav"
 SrcSampleRate
@@ -2558,7 +2558,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\44_2.mca"
+".\sounds_cmp\287_1.mca"
 CmpSeconds
 .704
 CmpSize
@@ -2572,7 +2572,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'hora_12'_44_2.wav"
+".\sounds_sim\'hora_12'_287_1.wav"
 SyncName
 ""
 LogName
@@ -2594,9 +2594,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-45
+288
 Version
-2
+1
 SrcName
 ".\audio\hoy_es.wav"
 SrcSampleRate
@@ -2616,7 +2616,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\45_2.mca"
+".\sounds_cmp\288_1.mca"
 CmpSeconds
 .768
 CmpSize
@@ -2630,7 +2630,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'hoy_es'_45_2.wav"
+".\sounds_sim\'hoy_es'_288_1.wav"
 SyncName
 ""
 LogName
@@ -2652,9 +2652,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-46
+289
 Version
-2
+1
 SrcName
 ".\audio\humedad.wav"
 SrcSampleRate
@@ -2674,7 +2674,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\46_2.mca"
+".\sounds_cmp\289_1.mca"
 CmpSeconds
 1.088
 CmpSize
@@ -2688,7 +2688,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'humedad'_46_2.wav"
+".\sounds_sim\'humedad'_289_1.wav"
 SyncName
 ""
 LogName
@@ -2710,9 +2710,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-47
+290
 Version
-2
+1
 SrcName
 ".\audio\ido_dia.wav"
 SrcSampleRate
@@ -2732,7 +2732,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\47_2.mca"
+".\sounds_cmp\290_1.mca"
 CmpSeconds
 2.336
 CmpSize
@@ -2746,7 +2746,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'ido_dia'_47_2.wav"
+".\sounds_sim\'ido_dia'_290_1.wav"
 SyncName
 ""
 LogName
@@ -2768,9 +2768,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-48
+291
 Version
-2
+1
 SrcName
 ".\audio\inicio.wav"
 SrcSampleRate
@@ -2790,7 +2790,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\48_2.mca"
+".\sounds_cmp\291_1.mca"
 CmpSeconds
 2.816
 CmpSize
@@ -2804,7 +2804,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'inicio'_48_2.wav"
+".\sounds_sim\'inicio'_291_1.wav"
 SyncName
 ""
 LogName
@@ -2826,9 +2826,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-49
+292
 Version
-2
+1
 SrcName
 ".\audio\laboratorio.wav"
 SrcSampleRate
@@ -2848,7 +2848,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\49_2.mca"
+".\sounds_cmp\292_1.mca"
 CmpSeconds
 .96
 CmpSize
@@ -2862,7 +2862,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'laboratorio'_49_2.wav"
+".\sounds_sim\'laboratorio'_292_1.wav"
 SyncName
 ""
 LogName
@@ -2884,9 +2884,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-50
+293
 Version
-2
+1
 SrcName
 ".\audio\manana.wav"
 SrcSampleRate
@@ -2906,7 +2906,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\50_2.mca"
+".\sounds_cmp\293_1.mca"
 CmpSeconds
 .864
 CmpSize
@@ -2920,7 +2920,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'manana'_50_2.wav"
+".\sounds_sim\'manana'_293_1.wav"
 SyncName
 ""
 LogName
@@ -2942,9 +2942,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-51
+294
 Version
-2
+1
 SrcName
 ".\audio\mes_1_enero.wav"
 SrcSampleRate
@@ -2964,7 +2964,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\51_2.mca"
+".\sounds_cmp\294_1.mca"
 CmpSeconds
 .64
 CmpSize
@@ -2978,7 +2978,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'mes_1_enero'_51_2.wav"
+".\sounds_sim\'mes_1_enero'_294_1.wav"
 SyncName
 ""
 LogName
@@ -3000,9 +3000,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-52
+295
 Version
-2
+1
 SrcName
 ".\audio\mes_2_febrero.wav"
 SrcSampleRate
@@ -3022,7 +3022,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\52_2.mca"
+".\sounds_cmp\295_1.mca"
 CmpSeconds
 .832
 CmpSize
@@ -3036,7 +3036,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'mes_2_febrero'_52_2.wav"
+".\sounds_sim\'mes_2_febrero'_295_1.wav"
 SyncName
 ""
 LogName
@@ -3058,9 +3058,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-53
+296
 Version
-2
+1
 SrcName
 ".\audio\mes_3_marzo.wav"
 SrcSampleRate
@@ -3080,7 +3080,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\53_2.mca"
+".\sounds_cmp\296_1.mca"
 CmpSeconds
 .672
 CmpSize
@@ -3094,7 +3094,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'mes_3_marzo'_53_2.wav"
+".\sounds_sim\'mes_3_marzo'_296_1.wav"
 SyncName
 ""
 LogName
@@ -3116,9 +3116,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-54
+297
 Version
-2
+1
 SrcName
 ".\audio\mes_4_abril.wav"
 SrcSampleRate
@@ -3138,7 +3138,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\54_2.mca"
+".\sounds_cmp\297_1.mca"
 CmpSeconds
 .576
 CmpSize
@@ -3152,7 +3152,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'mes_4_abril'_54_2.wav"
+".\sounds_sim\'mes_4_abril'_297_1.wav"
 SyncName
 ""
 LogName
@@ -3174,9 +3174,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-55
+298
 Version
-2
+1
 SrcName
 ".\audio\mes_5_mayo.wav"
 SrcSampleRate
@@ -3196,7 +3196,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\55_2.mca"
+".\sounds_cmp\298_1.mca"
 CmpSeconds
 .8
 CmpSize
@@ -3210,7 +3210,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'mes_5_mayo'_55_2.wav"
+".\sounds_sim\'mes_5_mayo'_298_1.wav"
 SyncName
 ""
 LogName
@@ -3232,9 +3232,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-56
+299
 Version
-2
+1
 SrcName
 ".\audio\mes_6_junio.wav"
 SrcSampleRate
@@ -3254,7 +3254,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\56_2.mca"
+".\sounds_cmp\299_1.mca"
 CmpSeconds
 .64
 CmpSize
@@ -3268,7 +3268,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'mes_6_junio'_56_2.wav"
+".\sounds_sim\'mes_6_junio'_299_1.wav"
 SyncName
 ""
 LogName
@@ -3290,9 +3290,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-57
+300
 Version
-2
+1
 SrcName
 ".\audio\mes_7julio.wav"
 SrcSampleRate
@@ -3312,7 +3312,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\57_2.mca"
+".\sounds_cmp\300_1.mca"
 CmpSeconds
 .704
 CmpSize
@@ -3326,7 +3326,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'mes_7julio'_57_2.wav"
+".\sounds_sim\'mes_7julio'_300_1.wav"
 SyncName
 ""
 LogName
@@ -3348,9 +3348,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-58
+301
 Version
-2
+1
 SrcName
 ".\audio\mes_8_agosto.wav"
 SrcSampleRate
@@ -3370,7 +3370,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\58_2.mca"
+".\sounds_cmp\301_1.mca"
 CmpSeconds
 .672
 CmpSize
@@ -3384,7 +3384,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'mes_8_agosto'_58_2.wav"
+".\sounds_sim\'mes_8_agosto'_301_1.wav"
 SyncName
 ""
 LogName
@@ -3406,9 +3406,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-59
+302
 Version
-2
+1
 SrcName
 ".\audio\mes_9_septiembre.wav"
 SrcSampleRate
@@ -3428,7 +3428,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\59_2.mca"
+".\sounds_cmp\302_1.mca"
 CmpSeconds
 .896
 CmpSize
@@ -3442,7 +3442,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'mes_9_septiembre'_59_2.wav"
+".\sounds_sim\'mes_9_septiembre'_302_1.wav"
 SyncName
 ""
 LogName
@@ -3464,9 +3464,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-60
+303
 Version
-2
+1
 SrcName
 ".\audio\mes_11_noviembre.wav"
 SrcSampleRate
@@ -3486,7 +3486,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\60_2.mca"
+".\sounds_cmp\303_1.mca"
 CmpSeconds
 .864
 CmpSize
@@ -3500,7 +3500,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'mes_11_noviembre'_60_2.wav"
+".\sounds_sim\'mes_11_noviembre'_303_1.wav"
 SyncName
 ""
 LogName
@@ -3522,9 +3522,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-61
+304
 Version
-2
+1
 SrcName
 ".\audio\mes_11_octubre.wav"
 SrcSampleRate
@@ -3544,7 +3544,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\61_2.mca"
+".\sounds_cmp\304_1.mca"
 CmpSeconds
 .864
 CmpSize
@@ -3558,7 +3558,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'mes_11_octubre'_61_2.wav"
+".\sounds_sim\'mes_11_octubre'_304_1.wav"
 SyncName
 ""
 LogName
@@ -3580,9 +3580,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-62
+305
 Version
-2
+1
 SrcName
 ".\audio\mes_12_diciembre.wav"
 SrcSampleRate
@@ -3602,7 +3602,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\62_2.mca"
+".\sounds_cmp\305_1.mca"
 CmpSeconds
 .864
 CmpSize
@@ -3616,7 +3616,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'mes_12_diciembre'_62_2.wav"
+".\sounds_sim\'mes_12_diciembre'_305_1.wav"
 SyncName
 ""
 LogName
@@ -3638,9 +3638,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-63
+306
 Version
-2
+1
 SrcName
 ".\audio\min_0.wav"
 SrcSampleRate
@@ -3660,7 +3660,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\63_2.mca"
+".\sounds_cmp\306_1.mca"
 CmpSeconds
 .768
 CmpSize
@@ -3674,7 +3674,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'min_0'_63_2.wav"
+".\sounds_sim\'min_0'_306_1.wav"
 SyncName
 ""
 LogName
@@ -3696,9 +3696,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-64
+307
 Version
-2
+1
 SrcName
 ".\audio\min_5.wav"
 SrcSampleRate
@@ -3718,7 +3718,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\64_2.mca"
+".\sounds_cmp\307_1.mca"
 CmpSeconds
 .704
 CmpSize
@@ -3732,7 +3732,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'min_5'_64_2.wav"
+".\sounds_sim\'min_5'_307_1.wav"
 SyncName
 ""
 LogName
@@ -3754,9 +3754,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-65
+308
 Version
-2
+1
 SrcName
 ".\audio\min_10.wav"
 SrcSampleRate
@@ -3776,7 +3776,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\65_2.mca"
+".\sounds_cmp\308_1.mca"
 CmpSeconds
 .8
 CmpSize
@@ -3790,7 +3790,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'min_10'_65_2.wav"
+".\sounds_sim\'min_10'_308_1.wav"
 SyncName
 ""
 LogName
@@ -3812,9 +3812,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-66
+309
 Version
-2
+1
 SrcName
 ".\audio\min_15.wav"
 SrcSampleRate
@@ -3834,7 +3834,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\66_2.mca"
+".\sounds_cmp\309_1.mca"
 CmpSeconds
 .736
 CmpSize
@@ -3848,7 +3848,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'min_15'_66_2.wav"
+".\sounds_sim\'min_15'_309_1.wav"
 SyncName
 ""
 LogName
@@ -3870,9 +3870,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-67
+310
 Version
-2
+1
 SrcName
 ".\audio\min_20.wav"
 SrcSampleRate
@@ -3892,7 +3892,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\67_2.mca"
+".\sounds_cmp\310_1.mca"
 CmpSeconds
 .608
 CmpSize
@@ -3906,7 +3906,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'min_20'_67_2.wav"
+".\sounds_sim\'min_20'_310_1.wav"
 SyncName
 ""
 LogName
@@ -3928,9 +3928,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-68
+311
 Version
-2
+1
 SrcName
 ".\audio\min_25.wav"
 SrcSampleRate
@@ -3950,7 +3950,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\68_2.mca"
+".\sounds_cmp\311_1.mca"
 CmpSeconds
 .992
 CmpSize
@@ -3964,7 +3964,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'min_25'_68_2.wav"
+".\sounds_sim\'min_25'_311_1.wav"
 SyncName
 ""
 LogName
@@ -3986,9 +3986,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-69
+312
 Version
-2
+1
 SrcName
 ".\audio\min_30.wav"
 SrcSampleRate
@@ -4008,7 +4008,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\69_2.mca"
+".\sounds_cmp\312_1.mca"
 CmpSeconds
 .608
 CmpSize
@@ -4022,7 +4022,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'min_30'_69_2.wav"
+".\sounds_sim\'min_30'_312_1.wav"
 SyncName
 ""
 LogName
@@ -4044,9 +4044,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-70
+313
 Version
-2
+1
 SrcName
 ".\audio\min_35.wav"
 SrcSampleRate
@@ -4066,7 +4066,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\70_2.mca"
+".\sounds_cmp\313_1.mca"
 CmpSeconds
 1.216
 CmpSize
@@ -4080,7 +4080,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'min_35'_70_2.wav"
+".\sounds_sim\'min_35'_313_1.wav"
 SyncName
 ""
 LogName
@@ -4102,9 +4102,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-71
+314
 Version
-2
+1
 SrcName
 ".\audio\min_40.wav"
 SrcSampleRate
@@ -4124,7 +4124,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\71_2.mca"
+".\sounds_cmp\314_1.mca"
 CmpSeconds
 .832
 CmpSize
@@ -4138,7 +4138,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'min_40'_71_2.wav"
+".\sounds_sim\'min_40'_314_1.wav"
 SyncName
 ""
 LogName
@@ -4160,9 +4160,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-72
+315
 Version
-2
+1
 SrcName
 ".\audio\min_45.wav"
 SrcSampleRate
@@ -4182,7 +4182,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\72_2.mca"
+".\sounds_cmp\315_1.mca"
 CmpSeconds
 .96
 CmpSize
@@ -4196,7 +4196,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'min_45'_72_2.wav"
+".\sounds_sim\'min_45'_315_1.wav"
 SyncName
 ""
 LogName
@@ -4218,9 +4218,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-73
+316
 Version
-2
+1
 SrcName
 ".\audio\min_50.wav"
 SrcSampleRate
@@ -4240,7 +4240,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\73_2.mca"
+".\sounds_cmp\316_1.mca"
 CmpSeconds
 .96
 CmpSize
@@ -4254,7 +4254,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'min_50'_73_2.wav"
+".\sounds_sim\'min_50'_316_1.wav"
 SyncName
 ""
 LogName
@@ -4276,9 +4276,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-74
+317
 Version
-2
+1
 SrcName
 ".\audio\min_55.wav"
 SrcSampleRate
@@ -4298,7 +4298,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\74_2.mca"
+".\sounds_cmp\317_1.mca"
 CmpSeconds
 .992
 CmpSize
@@ -4312,7 +4312,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'min_55'_74_2.wav"
+".\sounds_sim\'min_55'_317_1.wav"
 SyncName
 ""
 LogName
@@ -4334,9 +4334,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-75
+318
 Version
-2
+1
 SrcName
 ".\audio\no.wav"
 SrcSampleRate
@@ -4356,7 +4356,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\75_2.mca"
+".\sounds_cmp\318_1.mca"
 CmpSeconds
 .512
 CmpSize
@@ -4370,7 +4370,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'no'_75_2.wav"
+".\sounds_sim\'no'_318_1.wav"
 SyncName
 ""
 LogName
@@ -4392,9 +4392,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-76
+319
 Version
-2
+1
 SrcName
 ".\audio\no_clase.wav"
 SrcSampleRate
@@ -4414,7 +4414,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\76_2.mca"
+".\sounds_cmp\319_1.mca"
 CmpSeconds
 1.088
 CmpSize
@@ -4428,7 +4428,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'no_clase'_76_2.wav"
+".\sounds_sim\'no_clase'_319_1.wav"
 SyncName
 ""
 LogName
@@ -4450,9 +4450,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-77
+320
 Version
-2
+1
 SrcName
 ".\audio\no_entendido.wav"
 SrcSampleRate
@@ -4472,7 +4472,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\77_2.mca"
+".\sounds_cmp\320_1.mca"
 CmpSeconds
 1.088
 CmpSize
@@ -4486,7 +4486,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'no_entendido'_77_2.wav"
+".\sounds_sim\'no_entendido'_320_1.wav"
 SyncName
 ""
 LogName
@@ -4508,9 +4508,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-78
+321
 Version
-2
+1
 SrcName
 ".\audio\num_0.wav"
 SrcSampleRate
@@ -4530,7 +4530,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\78_2.mca"
+".\sounds_cmp\321_1.mca"
 CmpSeconds
 .64
 CmpSize
@@ -4544,7 +4544,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_0'_78_2.wav"
+".\sounds_sim\'num_0'_321_1.wav"
 SyncName
 ""
 LogName
@@ -4566,9 +4566,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-79
+322
 Version
-2
+1
 SrcName
 ".\audio\num_1.wav"
 SrcSampleRate
@@ -4588,7 +4588,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\79_2.mca"
+".\sounds_cmp\322_1.mca"
 CmpSeconds
 .48
 CmpSize
@@ -4602,7 +4602,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_1'_79_2.wav"
+".\sounds_sim\'num_1'_322_1.wav"
 SyncName
 ""
 LogName
@@ -4624,9 +4624,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-80
+323
 Version
-2
+1
 SrcName
 ".\audio\num_2.wav"
 SrcSampleRate
@@ -4646,7 +4646,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\80_2.mca"
+".\sounds_cmp\323_1.mca"
 CmpSeconds
 .608
 CmpSize
@@ -4660,7 +4660,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_2'_80_2.wav"
+".\sounds_sim\'num_2'_323_1.wav"
 SyncName
 ""
 LogName
@@ -4682,9 +4682,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-81
+324
 Version
-2
+1
 SrcName
 ".\audio\num_3.wav"
 SrcSampleRate
@@ -4704,7 +4704,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\81_2.mca"
+".\sounds_cmp\324_1.mca"
 CmpSeconds
 .576
 CmpSize
@@ -4718,7 +4718,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_3'_81_2.wav"
+".\sounds_sim\'num_3'_324_1.wav"
 SyncName
 ""
 LogName
@@ -4740,9 +4740,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-82
+325
 Version
-2
+1
 SrcName
 ".\audio\num_4.wav"
 SrcSampleRate
@@ -4762,7 +4762,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\82_2.mca"
+".\sounds_cmp\325_1.mca"
 CmpSeconds
 .544
 CmpSize
@@ -4776,7 +4776,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_4'_82_2.wav"
+".\sounds_sim\'num_4'_325_1.wav"
 SyncName
 ""
 LogName
@@ -4798,9 +4798,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-83
+326
 Version
-2
+1
 SrcName
 ".\audio\num_5.wav"
 SrcSampleRate
@@ -4820,7 +4820,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\83_2.mca"
+".\sounds_cmp\326_1.mca"
 CmpSeconds
 .608
 CmpSize
@@ -4834,7 +4834,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_5'_83_2.wav"
+".\sounds_sim\'num_5'_326_1.wav"
 SyncName
 ""
 LogName
@@ -4856,9 +4856,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-84
+327
 Version
-2
+1
 SrcName
 ".\audio\num_6.wav"
 SrcSampleRate
@@ -4878,7 +4878,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\84_2.mca"
+".\sounds_cmp\327_1.mca"
 CmpSeconds
 .672
 CmpSize
@@ -4892,7 +4892,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_6'_84_2.wav"
+".\sounds_sim\'num_6'_327_1.wav"
 SyncName
 ""
 LogName
@@ -4914,9 +4914,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-85
+328
 Version
-2
+1
 SrcName
 ".\audio\num_7.wav"
 SrcSampleRate
@@ -4936,7 +4936,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\85_2.mca"
+".\sounds_cmp\328_1.mca"
 CmpSeconds
 .608
 CmpSize
@@ -4950,7 +4950,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_7'_85_2.wav"
+".\sounds_sim\'num_7'_328_1.wav"
 SyncName
 ""
 LogName
@@ -4972,9 +4972,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-86
+329
 Version
-2
+1
 SrcName
 ".\audio\num_8.wav"
 SrcSampleRate
@@ -4994,7 +4994,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\86_2.mca"
+".\sounds_cmp\329_1.mca"
 CmpSeconds
 .576
 CmpSize
@@ -5008,7 +5008,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_8'_86_2.wav"
+".\sounds_sim\'num_8'_329_1.wav"
 SyncName
 ""
 LogName
@@ -5030,9 +5030,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-87
+330
 Version
-2
+1
 SrcName
 ".\audio\num_9.wav"
 SrcSampleRate
@@ -5052,7 +5052,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\87_2.mca"
+".\sounds_cmp\330_1.mca"
 CmpSeconds
 .512
 CmpSize
@@ -5066,7 +5066,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_9'_87_2.wav"
+".\sounds_sim\'num_9'_330_1.wav"
 SyncName
 ""
 LogName
@@ -5088,9 +5088,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-88
+331
 Version
-2
+1
 SrcName
 ".\audio\num_10.wav"
 SrcSampleRate
@@ -5110,7 +5110,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\88_2.mca"
+".\sounds_cmp\331_1.mca"
 CmpSeconds
 .544
 CmpSize
@@ -5124,7 +5124,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_10'_88_2.wav"
+".\sounds_sim\'num_10'_331_1.wav"
 SyncName
 ""
 LogName
@@ -5146,9 +5146,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-89
+332
 Version
-2
+1
 SrcName
 ".\audio\num_11.wav"
 SrcSampleRate
@@ -5168,7 +5168,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\89_2.mca"
+".\sounds_cmp\332_1.mca"
 CmpSeconds
 .48
 CmpSize
@@ -5182,7 +5182,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_11'_89_2.wav"
+".\sounds_sim\'num_11'_332_1.wav"
 SyncName
 ""
 LogName
@@ -5204,9 +5204,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-90
+333
 Version
-2
+1
 SrcName
 ".\audio\num_12.wav"
 SrcSampleRate
@@ -5226,7 +5226,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\90_2.mca"
+".\sounds_cmp\333_1.mca"
 CmpSeconds
 .576
 CmpSize
@@ -5240,7 +5240,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_12'_90_2.wav"
+".\sounds_sim\'num_12'_333_1.wav"
 SyncName
 ""
 LogName
@@ -5262,9 +5262,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-91
+334
 Version
-2
+1
 SrcName
 ".\audio\num_13.wav"
 SrcSampleRate
@@ -5284,7 +5284,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\91_2.mca"
+".\sounds_cmp\334_1.mca"
 CmpSeconds
 .608
 CmpSize
@@ -5298,7 +5298,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_13'_91_2.wav"
+".\sounds_sim\'num_13'_334_1.wav"
 SyncName
 ""
 LogName
@@ -5320,9 +5320,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-92
+335
 Version
-2
+1
 SrcName
 ".\audio\num_14.wav"
 SrcSampleRate
@@ -5342,7 +5342,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\92_2.mca"
+".\sounds_cmp\335_1.mca"
 CmpSeconds
 .608
 CmpSize
@@ -5356,7 +5356,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_14'_92_2.wav"
+".\sounds_sim\'num_14'_335_1.wav"
 SyncName
 ""
 LogName
@@ -5378,9 +5378,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-93
+336
 Version
-2
+1
 SrcName
 ".\audio\num_15.wav"
 SrcSampleRate
@@ -5400,7 +5400,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\93_2.mca"
+".\sounds_cmp\336_1.mca"
 CmpSeconds
 .576
 CmpSize
@@ -5414,7 +5414,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_15'_93_2.wav"
+".\sounds_sim\'num_15'_336_1.wav"
 SyncName
 ""
 LogName
@@ -5436,9 +5436,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-94
+337
 Version
-2
+1
 SrcName
 ".\audio\num_16.wav"
 SrcSampleRate
@@ -5458,7 +5458,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\94_2.mca"
+".\sounds_cmp\337_1.mca"
 CmpSeconds
 1.024
 CmpSize
@@ -5472,7 +5472,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_16'_94_2.wav"
+".\sounds_sim\'num_16'_337_1.wav"
 SyncName
 ""
 LogName
@@ -5494,9 +5494,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-95
+338
 Version
-2
+1
 SrcName
 ".\audio\num_17.wav"
 SrcSampleRate
@@ -5516,7 +5516,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\95_2.mca"
+".\sounds_cmp\338_1.mca"
 CmpSeconds
 .96
 CmpSize
@@ -5530,7 +5530,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_17'_95_2.wav"
+".\sounds_sim\'num_17'_338_1.wav"
 SyncName
 ""
 LogName
@@ -5552,9 +5552,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-96
+339
 Version
-2
+1
 SrcName
 ".\audio\num_18.wav"
 SrcSampleRate
@@ -5574,7 +5574,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\96_2.mca"
+".\sounds_cmp\339_1.mca"
 CmpSeconds
 .704
 CmpSize
@@ -5588,7 +5588,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_18'_96_2.wav"
+".\sounds_sim\'num_18'_339_1.wav"
 SyncName
 ""
 LogName
@@ -5610,9 +5610,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-97
+340
 Version
-2
+1
 SrcName
 ".\audio\num_19.wav"
 SrcSampleRate
@@ -5632,7 +5632,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\97_2.mca"
+".\sounds_cmp\340_1.mca"
 CmpSeconds
 .928
 CmpSize
@@ -5646,7 +5646,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_19'_97_2.wav"
+".\sounds_sim\'num_19'_340_1.wav"
 SyncName
 ""
 LogName
@@ -5668,9 +5668,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-98
+341
 Version
-2
+1
 SrcName
 ".\audio\num_20.wav"
 SrcSampleRate
@@ -5690,7 +5690,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\98_2.mca"
+".\sounds_cmp\341_1.mca"
 CmpSeconds
 .544
 CmpSize
@@ -5704,7 +5704,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_20'_98_2.wav"
+".\sounds_sim\'num_20'_341_1.wav"
 SyncName
 ""
 LogName
@@ -5726,9 +5726,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-99
+342
 Version
-2
+1
 SrcName
 ".\audio\num_21.wav"
 SrcSampleRate
@@ -5748,7 +5748,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\99_2.mca"
+".\sounds_cmp\342_1.mca"
 CmpSeconds
 .704
 CmpSize
@@ -5762,7 +5762,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_21'_99_2.wav"
+".\sounds_sim\'num_21'_342_1.wav"
 SyncName
 ""
 LogName
@@ -5784,9 +5784,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-100
+343
 Version
-2
+1
 SrcName
 ".\audio\num_22.wav"
 SrcSampleRate
@@ -5806,7 +5806,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\100_2.mca"
+".\sounds_cmp\343_1.mca"
 CmpSeconds
 .832
 CmpSize
@@ -5820,7 +5820,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_22'_100_2.wav"
+".\sounds_sim\'num_22'_343_1.wav"
 SyncName
 ""
 LogName
@@ -5842,9 +5842,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-101
+344
 Version
-2
+1
 SrcName
 ".\audio\num_23.wav"
 SrcSampleRate
@@ -5864,7 +5864,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\101_2.mca"
+".\sounds_cmp\344_1.mca"
 CmpSeconds
 .928
 CmpSize
@@ -5878,7 +5878,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_23'_101_2.wav"
+".\sounds_sim\'num_23'_344_1.wav"
 SyncName
 ""
 LogName
@@ -5900,9 +5900,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-102
+345
 Version
-2
+1
 SrcName
 ".\audio\num_24.wav"
 SrcSampleRate
@@ -5922,7 +5922,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\102_2.mca"
+".\sounds_cmp\345_1.mca"
 CmpSeconds
 .832
 CmpSize
@@ -5936,7 +5936,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_24'_102_2.wav"
+".\sounds_sim\'num_24'_345_1.wav"
 SyncName
 ""
 LogName
@@ -5958,9 +5958,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-103
+346
 Version
-2
+1
 SrcName
 ".\audio\num_25.wav"
 SrcSampleRate
@@ -5980,7 +5980,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\103_2.mca"
+".\sounds_cmp\346_1.mca"
 CmpSeconds
 .896
 CmpSize
@@ -5994,7 +5994,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_25'_103_2.wav"
+".\sounds_sim\'num_25'_346_1.wav"
 SyncName
 ""
 LogName
@@ -6016,9 +6016,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-104
+347
 Version
-2
+1
 SrcName
 ".\audio\num_26.wav"
 SrcSampleRate
@@ -6038,7 +6038,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\104_2.mca"
+".\sounds_cmp\347_1.mca"
 CmpSeconds
 .928
 CmpSize
@@ -6052,7 +6052,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_26'_104_2.wav"
+".\sounds_sim\'num_26'_347_1.wav"
 SyncName
 ""
 LogName
@@ -6074,9 +6074,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-105
+348
 Version
-2
+1
 SrcName
 ".\audio\num_27.wav"
 SrcSampleRate
@@ -6096,7 +6096,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\105_2.mca"
+".\sounds_cmp\348_1.mca"
 CmpSeconds
 .832
 CmpSize
@@ -6110,7 +6110,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_27'_105_2.wav"
+".\sounds_sim\'num_27'_348_1.wav"
 SyncName
 ""
 LogName
@@ -6132,9 +6132,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-106
+349
 Version
-2
+1
 SrcName
 ".\audio\num_28.wav"
 SrcSampleRate
@@ -6154,7 +6154,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\106_2.mca"
+".\sounds_cmp\349_1.mca"
 CmpSeconds
 .704
 CmpSize
@@ -6168,7 +6168,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_28'_106_2.wav"
+".\sounds_sim\'num_28'_349_1.wav"
 SyncName
 ""
 LogName
@@ -6190,9 +6190,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-107
+350
 Version
-2
+1
 SrcName
 ".\audio\num_29.wav"
 SrcSampleRate
@@ -6212,7 +6212,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\107_2.mca"
+".\sounds_cmp\350_1.mca"
 CmpSeconds
 .768
 CmpSize
@@ -6226,7 +6226,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_29'_107_2.wav"
+".\sounds_sim\'num_29'_350_1.wav"
 SyncName
 ""
 LogName
@@ -6248,9 +6248,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-108
+351
 Version
-2
+1
 SrcName
 ".\audio\num_30.wav"
 SrcSampleRate
@@ -6270,7 +6270,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\108_2.mca"
+".\sounds_cmp\351_1.mca"
 CmpSeconds
 .672
 CmpSize
@@ -6284,7 +6284,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_30'_108_2.wav"
+".\sounds_sim\'num_30'_351_1.wav"
 SyncName
 ""
 LogName
@@ -6306,9 +6306,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-109
+352
 Version
-2
+1
 SrcName
 ".\audio\num_31.wav"
 SrcSampleRate
@@ -6328,7 +6328,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\109_2.mca"
+".\sounds_cmp\352_1.mca"
 CmpSeconds
 .768
 CmpSize
@@ -6342,7 +6342,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_31'_109_2.wav"
+".\sounds_sim\'num_31'_352_1.wav"
 SyncName
 ""
 LogName
@@ -6364,9 +6364,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-110
+353
 Version
-2
+1
 SrcName
 ".\audio\num_32.wav"
 SrcSampleRate
@@ -6386,7 +6386,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\110_2.mca"
+".\sounds_cmp\353_1.mca"
 CmpSeconds
 .928
 CmpSize
@@ -6400,7 +6400,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_32'_110_2.wav"
+".\sounds_sim\'num_32'_353_1.wav"
 SyncName
 ""
 LogName
@@ -6422,9 +6422,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-111
+354
 Version
-2
+1
 SrcName
 ".\audio\num_33.wav"
 SrcSampleRate
@@ -6444,7 +6444,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\111_2.mca"
+".\sounds_cmp\354_1.mca"
 CmpSeconds
 .992
 CmpSize
@@ -6458,7 +6458,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_33'_111_2.wav"
+".\sounds_sim\'num_33'_354_1.wav"
 SyncName
 ""
 LogName
@@ -6480,9 +6480,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-112
+355
 Version
-2
+1
 SrcName
 ".\audio\num_34.wav"
 SrcSampleRate
@@ -6502,7 +6502,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\112_2.mca"
+".\sounds_cmp\355_1.mca"
 CmpSeconds
 .896
 CmpSize
@@ -6516,7 +6516,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_34'_112_2.wav"
+".\sounds_sim\'num_34'_355_1.wav"
 SyncName
 ""
 LogName
@@ -6538,9 +6538,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-113
+356
 Version
-2
+1
 SrcName
 ".\audio\num_35.wav"
 SrcSampleRate
@@ -6560,7 +6560,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\113_2.mca"
+".\sounds_cmp\356_1.mca"
 CmpSeconds
 .96
 CmpSize
@@ -6574,7 +6574,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_35'_113_2.wav"
+".\sounds_sim\'num_35'_356_1.wav"
 SyncName
 ""
 LogName
@@ -6596,9 +6596,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-114
+357
 Version
-2
+1
 SrcName
 ".\audio\num_36.wav"
 SrcSampleRate
@@ -6618,7 +6618,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\114_2.mca"
+".\sounds_cmp\357_1.mca"
 CmpSeconds
 1.024
 CmpSize
@@ -6632,7 +6632,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_36'_114_2.wav"
+".\sounds_sim\'num_36'_357_1.wav"
 SyncName
 ""
 LogName
@@ -6654,9 +6654,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-115
+358
 Version
-2
+1
 SrcName
 ".\audio\num_37.wav"
 SrcSampleRate
@@ -6676,7 +6676,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\115_2.mca"
+".\sounds_cmp\358_1.mca"
 CmpSeconds
 .896
 CmpSize
@@ -6690,7 +6690,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_37'_115_2.wav"
+".\sounds_sim\'num_37'_358_1.wav"
 SyncName
 ""
 LogName
@@ -6712,9 +6712,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-116
+359
 Version
-2
+1
 SrcName
 ".\audio\num_38.wav"
 SrcSampleRate
@@ -6734,7 +6734,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\116_2.mca"
+".\sounds_cmp\359_1.mca"
 CmpSeconds
 .832
 CmpSize
@@ -6748,7 +6748,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_38'_116_2.wav"
+".\sounds_sim\'num_38'_359_1.wav"
 SyncName
 ""
 LogName
@@ -6770,9 +6770,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-117
+360
 Version
-2
+1
 SrcName
 ".\audio\num_39.wav"
 SrcSampleRate
@@ -6792,7 +6792,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\117_2.mca"
+".\sounds_cmp\360_1.mca"
 CmpSeconds
 .832
 CmpSize
@@ -6806,7 +6806,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_39'_117_2.wav"
+".\sounds_sim\'num_39'_360_1.wav"
 SyncName
 ""
 LogName
@@ -6828,9 +6828,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-118
+361
 Version
-2
+1
 SrcName
 ".\audio\num_40.wav"
 SrcSampleRate
@@ -6850,7 +6850,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\118_2.mca"
+".\sounds_cmp\361_1.mca"
 CmpSeconds
 .608
 CmpSize
@@ -6864,7 +6864,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_40'_118_2.wav"
+".\sounds_sim\'num_40'_361_1.wav"
 SyncName
 ""
 LogName
@@ -6886,9 +6886,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-119
+362
 Version
-2
+1
 SrcName
 ".\audio\num_50.wav"
 SrcSampleRate
@@ -6908,7 +6908,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\119_2.mca"
+".\sounds_cmp\362_1.mca"
 CmpSeconds
 .64
 CmpSize
@@ -6922,7 +6922,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_50'_119_2.wav"
+".\sounds_sim\'num_50'_362_1.wav"
 SyncName
 ""
 LogName
@@ -6944,9 +6944,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-120
+363
 Version
-2
+1
 SrcName
 ".\audio\num_60.wav"
 SrcSampleRate
@@ -6966,7 +6966,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\120_2.mca"
+".\sounds_cmp\363_1.mca"
 CmpSeconds
 .64
 CmpSize
@@ -6980,7 +6980,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_60'_120_2.wav"
+".\sounds_sim\'num_60'_363_1.wav"
 SyncName
 ""
 LogName
@@ -7002,9 +7002,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-121
+364
 Version
-2
+1
 SrcName
 ".\audio\num_70.wav"
 SrcSampleRate
@@ -7024,7 +7024,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\121_2.mca"
+".\sounds_cmp\364_1.mca"
 CmpSeconds
 .672
 CmpSize
@@ -7038,7 +7038,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_70'_121_2.wav"
+".\sounds_sim\'num_70'_364_1.wav"
 SyncName
 ""
 LogName
@@ -7060,9 +7060,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-122
+365
 Version
-2
+1
 SrcName
 ".\audio\num_80.wav"
 SrcSampleRate
@@ -7082,7 +7082,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\122_2.mca"
+".\sounds_cmp\365_1.mca"
 CmpSeconds
 .576
 CmpSize
@@ -7096,7 +7096,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_80'_122_2.wav"
+".\sounds_sim\'num_80'_365_1.wav"
 SyncName
 ""
 LogName
@@ -7118,9 +7118,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-123
+366
 Version
-2
+1
 SrcName
 ".\audio\num_90.wav"
 SrcSampleRate
@@ -7140,7 +7140,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\123_2.mca"
+".\sounds_cmp\366_1.mca"
 CmpSeconds
 .64
 CmpSize
@@ -7154,7 +7154,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'num_90'_123_2.wav"
+".\sounds_sim\'num_90'_366_1.wav"
 SyncName
 ""
 LogName
@@ -7176,9 +7176,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-124
+367
 Version
-2
+1
 SrcName
 ".\audio\pase_buen_dia.wav"
 SrcSampleRate
@@ -7198,7 +7198,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\124_2.mca"
+".\sounds_cmp\367_1.mca"
 CmpSeconds
 1.216
 CmpSize
@@ -7212,7 +7212,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'pase_buen_dia'_124_2.wav"
+".\sounds_sim\'pase_buen_dia'_367_1.wav"
 SyncName
 ""
 LogName
@@ -7234,9 +7234,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-125
+368
 Version
-2
+1
 SrcName
 ".\audio\presentate.wav"
 SrcSampleRate
@@ -7256,7 +7256,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\125_2.mca"
+".\sounds_cmp\368_1.mca"
 CmpSeconds
 11.552
 CmpSize
@@ -7270,7 +7270,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'presentate'_125_2.wav"
+".\sounds_sim\'presentate'_368_1.wav"
 SyncName
 ""
 LogName
@@ -7292,9 +7292,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-126
+369
 Version
-2
+1
 SrcName
 ".\audio\si.wav"
 SrcSampleRate
@@ -7314,7 +7314,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\126_2.mca"
+".\sounds_cmp\369_1.mca"
 CmpSeconds
 .48
 CmpSize
@@ -7328,7 +7328,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'si'_126_2.wav"
+".\sounds_sim\'si'_369_1.wav"
 SyncName
 ""
 LogName
@@ -7350,9 +7350,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-127
+370
 Version
-2
+1
 SrcName
 ".\audio\son.wav"
 SrcSampleRate
@@ -7372,7 +7372,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\127_2.mca"
+".\sounds_cmp\370_1.mca"
 CmpSeconds
 .448
 CmpSize
@@ -7386,7 +7386,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'son'_127_2.wav"
+".\sounds_sim\'son'_370_1.wav"
 SyncName
 ""
 LogName
@@ -7408,9 +7408,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-128
+371
 Version
-2
+1
 SrcName
 ".\audio\tarde.wav"
 SrcSampleRate
@@ -7430,7 +7430,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\128_2.mca"
+".\sounds_cmp\371_1.mca"
 CmpSeconds
 .768
 CmpSize
@@ -7444,7 +7444,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'tarde'_128_2.wav"
+".\sounds_sim\'tarde'_371_1.wav"
 SyncName
 ""
 LogName
@@ -7466,9 +7466,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-129
+372
 Version
-2
+1
 SrcName
 ".\audio\temperatura.wav"
 SrcSampleRate
@@ -7488,7 +7488,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\129_2.mca"
+".\sounds_cmp\372_1.mca"
 CmpSeconds
 1.568
 CmpSize
@@ -7502,7 +7502,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'temperatura'_129_2.wav"
+".\sounds_sim\'temperatura'_372_1.wav"
 SyncName
 ""
 LogName
@@ -7524,9 +7524,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-130
+373
 Version
-2
+1
 SrcName
 ".\audio\teoria.wav"
 SrcSampleRate
@@ -7546,7 +7546,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\130_2.mca"
+".\sounds_cmp\373_1.mca"
 CmpSeconds
 .64
 CmpSize
@@ -7560,7 +7560,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'teoria'_130_2.wav"
+".\sounds_sim\'teoria'_373_1.wav"
 SyncName
 ""
 LogName
@@ -7582,9 +7582,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-131
+374
 Version
-2
+1
 SrcName
 ".\audio\vaya.wav"
 SrcSampleRate
@@ -7604,7 +7604,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\131_2.mca"
+".\sounds_cmp\374_1.mca"
 CmpSeconds
 2.016
 CmpSize
@@ -7618,7 +7618,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'vaya'_131_2.wav"
+".\sounds_sim\'vaya'_374_1.wav"
 SyncName
 ""
 LogName
@@ -7640,9 +7640,9 @@ Comment
 [EndSound]
 [Sound]
 Handle
-132
+375
 Version
-2
+1
 SrcName
 ".\audio\ventilador.wav"
 SrcSampleRate
@@ -7662,7 +7662,7 @@ SubLabel
 CmpCurrent
 #TRUE#
 CmpName
-".\sounds_cmp\132_2.mca"
+".\sounds_cmp\375_1.mca"
 CmpSeconds
 2.432
 CmpSize
@@ -7676,7 +7676,7 @@ CmpRate
 Volume
 100
 SimName
-".\sounds_sim\'ventilador'_132_2.wav"
+".\sounds_sim\'ventilador'_375_1.wav"
 SyncName
 ""
 LogName

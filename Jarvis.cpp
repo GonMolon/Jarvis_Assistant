@@ -15,7 +15,6 @@ Jarvis::Jarvis() {
 }
 
 void Jarvis::refresh() {
-    Serial.println(vc.is_sleeping());
     if(!vc.is_sleeping()) {
         if(mov.refresh(timer2)) {
             timer1.reset();
@@ -41,64 +40,95 @@ void Jarvis::refresh() {
 }
 
 void Jarvis::sec_inicio() {
-    int id = vc.readCommand(1, 3);
-    if(id == 0) { //Apagar luz
+    int id = vc.readCommand(1, VoiceControl::REPETITIONS);
+    if(id == 0) { //Apaga la luz
         inter.off();
-    } else if(id == 1) { //Encender luz
+    } else if(id == 1) { //Enciende la luz
         inter.on();
     } else if(id == 2) { //Presentate
         vc.play(SND_presentate);
-        sec_inicio();
-    } else if(id == 3) { //Chiste
+        //sec_inicio();
+    } else if(id == 3) { //Cuentame un chiste
         sec_chiste();
-    } else if(id == 4) { //Resumen
+    } else if(id == 4) { //Resumen del dia
         vc.play(0);
         sec_resumen_dia();
-    } else if(id == 5) { //Sleep mode
+    } else if(id == 5) { //Desactivate
         vc.play(SND_pase_buen_dia);
         vc.desactivar();
     } else if(id == 6) { //Cancelar
         vc.play(0);
-    } else if(id == 7) { //Ventilador on
+    } else if(id == 7) { //Enciende, el ventilador
         vc.play(0);
         ir.level_3();
-    } else if(id == 8) { //Ventilador off
+    } else if(id == 8) { //Apaga el ventilador
         vc.play(0);
         ir.level_0();
-    } else if(id == 9) { //Hora
+    } else if(id == 9) { //Que hora es?
         sec_hora();
-    } else if(id == 10) { //Dia esto noooo
-    } else if(id == 11) { //Weather
-        sec_weather();
-    } else if(id == 12) { //Poner musica
+    } else if(id == 10) { //Pon musica
         sec_musica();
-    } else if(id == 13) { //Menu musica
+    } else if(id == 11) { //Controlar ipod
         sec_menu_musica();
-    } else if(id == 14) { //Temperatura
+    } else if(id == 12) { //Que temperatura hay?
         sec_temperatura();
-    } else if(id == 15) { //Marcho
+    } else if(id == 13) { //Me voy
+        sec_desaparecer();
+    } else if(id == 14) { //Desconectalo todo
+        sec_temperatura();
+    } else if(id == 15) { //Buenas noches
         sec_despertador(6, 30);
     }
 }
 
 void Jarvis::check_ir() {
     long IRCode = ir.read();
-    if(IRCode == IRtransmitter::SPEAKERS_ON) {
-        if(vc.is_sleeping()) {
-            vc.despertar();
+    if(IRCode == IRtransmitter::SPEAKERS_VIDEO) {
+        Serial.println(ir.isControllingSpeakers());
+        ir.setControllingSpeakers(!ir.isControllingSpeakers());
+        Serial.println(ir.isControllingSpeakers());
+    } else {
+        if(ir.isControllingSpeakers()) {
+            if(IRCode == IRtransmitter::SPEAKERS_ON) {
+                ir.speaker_on();
+            } else if(IRCode == IRtransmitter::SPEAKERS_HIGHER) {
+                ir.volume_up();
+            } else if(IRCode == IRtransmitter::SPEAKERS_LOWER) {
+                ir.volume_down();
+            } else if(IRCode == IRtransmitter::SPEAKERS_UP) {
+                ir.up();
+            } else if(IRCode == IRtransmitter::SPEAKERS_DOWN) {
+                ir.down();
+            } else if(IRCode == IRtransmitter::SPEAKERS_MENU) {
+                ir.menu();
+            } else if(IRCode == IRtransmitter::SPEAKERS_SELECT) {
+                 ir.select();
+            } else if(IRCode == IRtransmitter::SPEAKERS_PREVIOUS) {
+                ir.previous();
+            } else if(IRCode == IRtransmitter::SPEAKERS_PLAY) {
+                ir.play();
+            } else if(IRCode == IRtransmitter::SPEAKERS_NEXT) {
+                ir.next();
+            }
         } else {
-            vc.desactivar();
+            if(IRCode == IRtransmitter::SPEAKERS_ON) {
+                if(vc.is_sleeping()) {
+                    vc.despertar();
+                } else {
+                    vc.desactivar();
+                }
+            } else if(IRCode == IRtransmitter::SPEAKERS_MUTE) {
+                mov.set_light_fixed(!mov.is_light_fixed());
+            } else if(IRCode == IRtransmitter::SPEAKERS_HIGHER) {
+                ir.level_3();
+            } else if(IRCode == IRtransmitter::SPEAKERS_LOWER) {
+                ir.level_0();
+            } else if(IRCode == IRtransmitter::SPEAKERS_UP) {
+                ir.light_on();
+            } else if(IRCode == IRtransmitter::SPEAKERS_DOWN) {
+                ir.light_off();
+            }
         }
-    } else if(IRCode == IRtransmitter::SPEAKERS_MUTE) {
-        mov.set_light_fixed(!mov.is_light_fixed());
-    } else if(IRCode == IRtransmitter::SPEAKERS_HIGHER) {
-        ir.level_3();
-    } else if(IRCode == IRtransmitter::SPEAKERS_LOWER) {
-        ir.level_0();
-    } else if(IRCode == IRtransmitter::SPEAKERS_UP) {
-        ir.light_on();
-    } else if(IRCode == IRtransmitter::SPEAKERS_DOWN) {
-        ir.light_off();
     }
 }
 
@@ -119,7 +149,7 @@ void Jarvis::sec_resumen_dia() {
     sec_hora();
     sec_temperatura();
     sec_humedad();
-    sec_weather();
+    sec_horario();
 }
 
 bool Jarvis::check_time() {
@@ -139,11 +169,6 @@ void Jarvis::sec_hora() {
         vc.play(SND_dia_1_lunes + time.getDayOfWeek()-1);
         vc.play(SND_num_1 + time.getDay() - 1);
         vc.play(SND_mes_1_enero + time.getMonth() - 1);
-        if(time.getDayOfWeek() < 6) {
-            vc.play(SND_faltan);
-            vc.play(SND_num_0+(6-time.getDayOfWeek()));
-            vc.play(SND_dias);
-        }
     } else {
         delay(1000);
     }
@@ -188,13 +213,13 @@ void Jarvis::sec_humedad() {
 
 void Jarvis::sec_dormir() {
     vc.play(SND_dormir_musica);
-    bool music = vc.readCommand(2,3) == 0;
+    bool music = vc.readCommand(2, VoiceControl::REPETITIONS) == 0;
     vc.play(SND_despertador);
-    bool despertador = vc.readCommand(2,3) == 0;
+    bool despertador = vc.readCommand(2, VoiceControl::REPETITIONS) == 0;
     int id;
     if(despertador) {
         vc.play(SND_cual);
-        id = vc.readCommand(5, 3);
+        id = vc.readCommand(5, VoiceControl::REPETITIONS);
         if(id != -1) {
             vc.play(SND_alarma_activada);
             vc.play(SND_a);
@@ -289,26 +314,26 @@ void Jarvis::sec_despertador(int hora, int min) {
 void Jarvis::sec_aparecer() {
     sec_light_on();
     vc.play(SND_ido_dia);
-    int id = vc.readCommand(3, 3);
+    int id = vc.readCommand(3, VoiceControl::REPETITIONS);
     if(id == 0) { //Bien
         vc.play(SND_alegro);
     } else if(id == 1) { //Mal
         vc.play(SND_vaya);
         vc.play(SND_chiste_oir);
-        if(vc.readCommand(2, 3) == 0) {
+        if(vc.readCommand(2, VoiceControl::REPETITIONS) == 0) {
             sec_chiste();
             delay(500);
         }
     }
     if(term.get_temperature() >= 25) {
         vc.play(SND_ventilador);
-        if(vc.readCommand(2, 3) == 0) { //SI
+        if(vc.readCommand(2, VoiceControl::REPETITIONS) == 0) { //SI
             vc.play(0);
             ir.level_3();
         }
     }
     vc.play(SND_escuchar_musica);
-    if(vc.readCommand(2,3) == 0) {
+    if(vc.readCommand(2, VoiceControl::REPETITIONS) == 0) {
         sec_musica();
     }
     vc.readTrigger();
@@ -329,29 +354,26 @@ void Jarvis::sec_weather() {
 void Jarvis::sec_musica() {
     vc.play(0);
     ir.speaker_on();
-    ir.random();
-    delay(500);
     ir.play();
 }
 
 void Jarvis::sec_menu_musica() {
     vc.play(0);
-    int id = vc.readCommand(4,3);
-    if(id == 0) {
+    int id = vc.readCommand(4, VoiceControl::REPETITIONS);
+    if(id == 0) { //Siguiente cancion
         ir.next();
-    } else if(id == 1) {
+    } else if(id == 1) { //Cancion anterior
         ir.previous();
         ir.previous();
-    } else if(id == 2) {
+    } else if(id == 2) { //Apaga los altavoces
         ir.speaker_on();
-    } else if(id == 3) {
-        ir.playlist(7);
-    } else if(id == 4) {
+    } else if(id == 3) { //Sube el volumen
         ir.volume_up();
-    } else if(id == 4) {
+    } else if(id == 4) { //Baja el volumen
         ir.volume_down();
+    } else if(id == 4) { //Modo aleatorio
+        ir.random();
     }
-    vc.readTrigger();
 }
 
 void Jarvis::sec_horario() {
@@ -360,25 +382,24 @@ void Jarvis::sec_horario() {
         vc.play(SND_no_clase);
     } else {
         vc.play(SND_clases);
-        int clase, hora;
-        for(int i = 1; i <= 3; ++i) {
-            if(i == 1) {
+        int clase;
+        for(int i = 0; i < 3; ++i) {
+            if(i == 0) {
                 clase = horario.ocho;
-                hora = 8;
-            } else if (i == 2) {
+            } else if (i == 1) {
                 clase = horario.diez;
-                hora = 10;
             } else {
                 clase = horario.doce;
-                hora = 12;
             }
             if(clase != -1) {
-                say_clase(clase, hora);
-                vc.play(SND_a);
-                say_time(hora, 0);
-                delay(500);
+                say_clase(clase, 8+i*2);
             }
         }
+    }
+    if(time.getDayOfWeek() < 6) {
+        vc.play(SND_faltan);
+        vc.play(SND_num_0+(6-time.getDayOfWeek()));
+        vc.play(SND_dias);
     }
 }
 
@@ -388,8 +409,11 @@ void Jarvis::say_clase(int clase, int hora) {
     } else {
         vc.play(SND_teoria);
     }
-    clase = clase/double(2) + 0.5;
+    clase = ((double)clase)/2 + 0.5;
     vc.play(SND_clases_BD+clase-1);
+    vc.play(SND_a);
+    say_time(hora, 0);
+    delay(500);
 }
 
 void Jarvis::sec_apagar_todo() {

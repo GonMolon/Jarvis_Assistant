@@ -13,7 +13,12 @@ VoiceControl::VoiceControl() {
     easyvr.setPinOutput(EasyVR::IO1, HIGH);
     easyvr.setTimeout(TIMEOUT);
     easyvr.setLanguage(LANG);
-    easyvr.setLevel(LEVEL);
+    if(easyvr.setLevel(LEVEL)) {
+        Serial.print("level cambiado: ");
+        Serial.println(LEVEL);
+    } else {
+        Serial.println("Error al cambiar level");
+    }
     sleeping = false;
 }
 
@@ -21,11 +26,18 @@ void VoiceControl::readTrigger() {
     easyvr.recognizeCommand(0);
 }
 
+void VoiceControl::printName(int group, int id) {
+    uint8_t training;
+    char name[33];
+    easyvr.dumpCommand(group, id, name, training);
+    Serial.print("Command: ");
+    Serial.println(name);
+}
+
 int VoiceControl::getTrigger() {
     int id = easyvr.getCommand();
     if (id >= 0) {
-        Serial.print(F("Command: "));
-        Serial.println(id);
+        printName(0, id);
     } else {
         if (easyvr.isTimeout()) {
             Serial.println(F("Timed out, try again..."));
@@ -45,8 +57,7 @@ int VoiceControl::readCommand(int group, int repet) {
     while(is_listening()) {}
     int id = easyvr.getCommand();
     if(id >= 0) {
-        Serial.print(F("Command: "));
-        Serial.println(id);
+        printName(group, id);
         return id;
     } else {
         --repet;

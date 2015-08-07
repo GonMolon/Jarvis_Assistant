@@ -20,4 +20,5 @@ Timetable::HorarioDia Timetable::getHorario(int dia) {
         horario.diez = SO_L;
         horario.doce = BD_T;
     }
+    return horario;
 }

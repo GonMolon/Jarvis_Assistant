@@ -11,7 +11,6 @@ void Timer::reset() {
 }
 
 bool Timer::is_finished() const {
-    Serial.println((finishTime - millis())/1000);
     return millis() > finishTime;
 }
 
