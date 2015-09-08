@@ -85,7 +85,7 @@ void VoiceControl::despertar() {
 
 void VoiceControl::play(int track) {
     easyvr.stop();
-    easyvr.playSound(track, VOL);
+    easyvr.playSound(track, VOLUME);
 }
 
 bool VoiceControl::is_sleeping() {
@@ -94,4 +94,8 @@ bool VoiceControl::is_sleeping() {
 
 bool VoiceControl::is_listening() {
     return !easyvr.hasFinished();
+}
+
+void VoiceControl::set_volume(int volume) {
+    this->VOLUME = volume;
 }

@@ -21,7 +21,9 @@ void Jarvis::refresh() {
             if(mov.is_moving()) {
                 sec_light_on();
             } else {
-                ir.light_off();
+                if(!mov.is_light_fixed()) {
+                    ir.light_off();
+                }
             }
         } else if(!mov.is_moving()) {
             if(timer1.is_finished()) {
@@ -65,19 +67,22 @@ void Jarvis::sec_inicio() {
         vc.play(0);
         ir.level_0();
     } else if(id == 9) { //Que hora es?
+        vc.play(0);
         sec_hora();
     } else if(id == 10) { //Pon musica
         sec_musica();
     } else if(id == 11) { //Controlar ipod
+        vc.play(0);
         sec_menu_musica();
     } else if(id == 12) { //Que temperatura hay?
         sec_temperatura();
     } else if(id == 13) { //Me voy
+        vc.play(SND_pase_buen_dia);
         sec_desaparecer();
     } else if(id == 14) { //Desconectalo todo
-        sec_temperatura();
+        sec_apagar_todo();
     } else if(id == 15) { //Buenas noches
-        sec_despertador(6, 30);
+        sec_dormir();
     }
 }
 
@@ -119,6 +124,7 @@ void Jarvis::check_ir() {
                 }
             } else if(IRCode == IRtransmitter::SPEAKERS_MUTE) {
                 mov.set_light_fixed(!mov.is_light_fixed());
+                ir.light_off();
             } else if(IRCode == IRtransmitter::SPEAKERS_HIGHER) {
                 ir.level_3();
             } else if(IRCode == IRtransmitter::SPEAKERS_LOWER) {
@@ -176,14 +182,14 @@ void Jarvis::sec_hora() {
 
 void Jarvis::say_time(int hour, int min) {
     int index = hour%12 - 1;
-    if(min > 30) {
+    if(min > 32) {
         index = index + 1;
     }
     if(index < 0) {
        index = 11;
     }
     vc.play(SND_hora_1 + index);
-    index = ((int)(min/double(5) + 0.5))%12; //arredondeando a 5 minutos
+    index = ((int)(min/double(5) + 0.5))%12; //arredondeando a multiple de 5
     vc.play(SND_min_0 + index);
     if(hour <= 12) {
         vc.play(SND_manana);
@@ -244,7 +250,6 @@ void Jarvis::sec_dormir() {
     inter.off();
     if(music) {
         ir.speaker_on();
-        ir.set_volume(5);
         ir.playlist(7);
         delay(200);
         ir.next();
@@ -270,18 +275,19 @@ void Jarvis::sec_dormir() {
     } else {
         while(mov.is_moving()) {
             mov.refresh(timer2);
-            Serial.println("Esperando a que se tumbe");
         }
         sec_despertar();
     }
 }
 
 void Jarvis::sec_despertar() {
-    while(mov.get_light() > 500 || !mov.is_moving()) {
+    while(mov.get_light() > 500 && !mov.is_moving()) {
         mov.refresh(timer2);
     }
+    vc.set_volume(20);
     vc.play(SND_buenos_dias);
     sec_resumen_dia();
+    vc.set_volume(31);
     ir.level_0();
     vc.despertar();
 }
@@ -302,11 +308,10 @@ void Jarvis::sec_despertador(int hora, int min) {
         }
         ir.set_volume(0);
         sec_musica();
-        for(int i = 0; i < 4; ++i) {
-            delay(1000);
+        for(int i = 0; i < 3; ++i) {
+            delay(7000);
             ir.volume_up();
         }
-        delay(20*1000);
     }
     sec_despertar();
 }
@@ -325,7 +330,7 @@ void Jarvis::sec_aparecer() {
             delay(500);
         }
     }
-    if(term.get_temperature() >= 25) {
+    if(term.get_temperature() >= 26) {
         vc.play(SND_ventilador);
         if(vc.readCommand(2, VoiceControl::REPETITIONS) == 0) { //SI
             vc.play(0);
@@ -340,9 +345,10 @@ void Jarvis::sec_aparecer() {
 }
 
 void Jarvis::sec_desaparecer() {
-    vc.play(SND_pase_buen_dia);
     sec_apagar_todo();
-    delay(20*1000);
+    while(mov.is_moving()) {
+        mov.refresh(timer2);
+    }
     while(!(mov.refresh(timer2) && mov.is_moving())) {}
     sec_aparecer();
 }
@@ -358,8 +364,10 @@ void Jarvis::sec_musica() {
 }
 
 void Jarvis::sec_menu_musica() {
-    vc.play(0);
     int id = vc.readCommand(4, VoiceControl::REPETITIONS);
+    if(id >= 0) {
+        vc.play(0);
+    }
     if(id == 0) { //Siguiente cancion
         ir.next();
     } else if(id == 1) { //Cancion anterior
@@ -367,11 +375,12 @@ void Jarvis::sec_menu_musica() {
         ir.previous();
     } else if(id == 2) { //Apaga los altavoces
         ir.speaker_on();
+        vc.play(0);
     } else if(id == 3) { //Sube el volumen
         ir.volume_up();
     } else if(id == 4) { //Baja el volumen
         ir.volume_down();
-    } else if(id == 4) { //Modo aleatorio
+    } else if(id == 5) { //Modo aleatorio
         ir.random();
     }
 }

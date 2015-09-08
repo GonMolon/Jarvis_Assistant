@@ -9,8 +9,8 @@ private:
     SoftwareSerial  port = SoftwareSerial (2,9);
     EasyVR easyvr = EasyVR(port);
     static const int LANG = EasyVR::SPANISH;
-    static const int LEVEL = EasyVR::HARDEST;
-    static const int VOL = 31;
+    static const int LEVEL = 3;
+    int VOLUME = 31;
     static const int TIMEOUT = 4;
     bool sleeping = false;
     void printName(int group, int id);
@@ -24,6 +24,7 @@ public:
     void readTrigger();
     int getTrigger();
     void play(int track);
+    void set_volume(int vol);
     void desactivar();
     void despertar();
 };
