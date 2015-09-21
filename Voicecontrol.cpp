@@ -95,7 +95,3 @@ bool VoiceControl::is_sleeping() {
 bool VoiceControl::is_listening() {
     return !easyvr.hasFinished();
 }
-
-void VoiceControl::set_volume(int volume) {
-    this->VOLUME = volume;
-}

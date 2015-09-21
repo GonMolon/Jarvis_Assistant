@@ -29,7 +29,7 @@ class Jarvis {
     void sec_humedad();
     void sec_dormir();
     void sec_despertar();
-    void sec_despertador(int hora, int min);
+    void sec_despertador(int hora, int min, bool music);
     void sec_aparecer();
     void sec_desaparecer();
     void sec_apagar_todo();
@@ -40,6 +40,7 @@ class Jarvis {
     void sec_light_on();
     void sec_horario();
     void say_clase(int clase, int hora);
+    void music_timer(int min);
     void check_ir();
   public:
     Jarvis();

@@ -10,7 +10,7 @@ private:
     EasyVR easyvr = EasyVR(port);
     static const int LANG = EasyVR::SPANISH;
     static const int LEVEL = 3;
-    int VOLUME = 31;
+    static const int VOLUME = 31;
     static const int TIMEOUT = 4;
     bool sleeping = false;
     void printName(int group, int id);
