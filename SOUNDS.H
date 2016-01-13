@@ -1,3 +1,5 @@
+// constants defining sounds as entries in the sound table:
+
 #define SND_a                   1
 #define SND_alarma_activada     2
 #define SND_alarma_cancelada    3
@@ -57,8 +59,8 @@
 #define SND_mes_7julio          57
 #define SND_mes_8_agosto        58
 #define SND_mes_9_septiembre    59
-#define SND_mes_11_noviembre    60
-#define SND_mes_11_octubre      61
+#define SND_mes_10_octubre      60
+#define SND_mes_11_noviembre    61
 #define SND_mes_12_diciembre    62
 #define SND_min_0               63
 #define SND_min_5               64

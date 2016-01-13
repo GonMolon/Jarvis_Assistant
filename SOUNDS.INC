@@ -65,8 +65,8 @@
     .EXTRN (const) SX_mes_7julio
     .EXTRN (const) SX_mes_8_agosto
     .EXTRN (const) SX_mes_9_septiembre
+    .EXTRN (const) SX_mes_10_octubre
     .EXTRN (const) SX_mes_11_noviembre
-    .EXTRN (const) SX_mes_11_octubre
     .EXTRN (const) SX_mes_12_diciembre
     .EXTRN (const) SX_min_0
     .EXTRN (const) SX_min_5
@@ -201,8 +201,8 @@ SND_mes_6_junio         .EQU 56
 SND_mes_7julio          .EQU 57
 SND_mes_8_agosto        .EQU 58
 SND_mes_9_septiembre    .EQU 59
-SND_mes_11_noviembre    .EQU 60
-SND_mes_11_octubre      .EQU 61
+SND_mes_10_octubre      .EQU 60
+SND_mes_11_noviembre    .EQU 61
 SND_mes_12_diciembre    .EQU 62
 SND_min_0               .EQU 63
 SND_min_5               .EQU 64

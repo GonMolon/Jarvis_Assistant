@@ -36,7 +36,7 @@ public:
     void next();
     void previous();
     void playlist(int id);
-    void set_volume(int v);
+    void set_volume(int v, bool sync);
     void volume_up();
     void volume_down();
     void up();

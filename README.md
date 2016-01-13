@@ -12,7 +12,7 @@ Abrir en modo administrador quickSynthesis. (MODO RSC4 family). Abrir el archivo
 (o maximo que se pueda mientras que quede memoria, actualmente haria falta por debajo de 4-bit), 
 seleccionar max en advanced-de-emphasis on playback. Seleccionar todo y click en build.
 
-Cargar EasyVRBridge. Poner jumper en "Up". Abrir easyvr commander, file, update custom table. 
+Poner jumper en "Up" + conectar shield directamente. Abrir easyvr commander, file, update custom table. 
 Importamos la tabla de sonidos, activamos slow transfer y subimos.
 
 Borramos en SOUNDS.h todo menos los define.
@@ -21,9 +21,7 @@ Borramos en SOUNDS.h todo menos los define.
 -------------------------------------------------------------------------------
 Para grabar nuevos comandos:
 -------------------------------------------------------------------------------
-Poner jumper en "Sw". Abrir easyvr commander y conectar a arduino. La shield tiene que estar 
-conectada directamente a arduino.
-
+Jumper en SW, cargar easyvrbridge (customizado), abrir easyvr ordenador y conectar.
 
 -------------------------------------------------------------------------------
 Para cargar el programa:

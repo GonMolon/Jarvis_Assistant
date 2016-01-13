@@ -43,14 +43,20 @@ void IRtransmitter::previous() {
     sendNEC(SPEAKERS_PREVIOUS);
 }
 
-void IRtransmitter::set_volume(int v) {
+void IRtransmitter::set_volume(int vol, bool sync) {
+    if(sync) {
+        for(int i = 0; i < 20; ++i) {
+            sendNEC(SPEAKERS_HIGHER);
+            delay(WAIT_TIME);
+        }
+    }
     for(int i = 0; i < 20; ++i) {
         sendNEC(SPEAKERS_LOWER);
         delay(WAIT_TIME);
     }
-    for(int i = 0; i < v; ++i) {
+    for(int i = 0; i < vol; ++i) {
         sendNEC(SPEAKERS_HIGHER);
-        delay(WAIT_TIME*4);
+        delay(WAIT_TIME);
     }
 }
 

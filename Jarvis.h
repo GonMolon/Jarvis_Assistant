@@ -20,9 +20,10 @@ class Jarvis {
     Timer timer1 = Timer(60*60);
     Timer timer2 = Timer(Movimiento::INTERVAL);
     bool alarma = false;
+    static const int MUSIC_TIMER = 25;
     void sec_inicio();
     void sec_resumen_dia();
-    void sec_hora();
+    bool sec_hora();
     void say_time(int hour, int min);
     bool check_time();
     void sec_temperatura();
@@ -33,8 +34,6 @@ class Jarvis {
     void sec_aparecer();
     void sec_desaparecer();
     void sec_apagar_todo();
-    void sec_weather();
-    void sec_musica();
     void sec_menu_musica();
     void sec_chiste();
     void sec_light_on();
@@ -42,6 +41,7 @@ class Jarvis {
     void say_clase(int clase, int hora);
     void music_timer(int min);
     void check_ir();
+    void simulador();
   public:
     Jarvis();
     void refresh();
